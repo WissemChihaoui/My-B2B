@@ -1,25 +1,24 @@
 "use strict";
 
 let fv, offCanvasEl;
-document.addEventListener('DOMContentLoaded', function (e) {
+document.addEventListener("DOMContentLoaded", function (e) {
   (function () {
-
-    const formAddNewRecord = document.getElementById('form-add-new-superAdmin');
+    const formAddNewRecord = document.getElementById("form-add-new-superAdmin");
 
     setTimeout(() => {
-      const newRecord = document.querySelector('.create-new-superAdmin'),
-        offCanvasElement = document.querySelector('#add-new-superAdmin');
+      const newRecord = document.querySelector(".create-new-superAdmin"),
+        offCanvasElement = document.querySelector("#add-new-superAdmin");
 
       // To open offCanvas, to add new record
       if (newRecord) {
-        newRecord.addEventListener('click', function () {
+        newRecord.addEventListener("click", function () {
           offCanvasEl = new bootstrap.Offcanvas(offCanvasElement);
           // Empty fields on offCanvas open
-            (offCanvasElement.querySelector('.dt-full-name').value = ''),
-            (offCanvasElement.querySelector('.dt-post').value = ''),
-            (offCanvasElement.querySelector('.dt-email').value = ''),
-            (offCanvasElement.querySelector('.dt-date').value = ''),
-            (offCanvasElement.querySelector('.dt-salary').value = '');
+          (offCanvasElement.querySelector(".dt-full-name").value = ""),
+            (offCanvasElement.querySelector(".dt-post").value = ""),
+            (offCanvasElement.querySelector(".dt-email").value = ""),
+            (offCanvasElement.querySelector(".dt-date").value = ""),
+            (offCanvasElement.querySelector(".dt-salary").value = "");
           // Open offCanvas with form
           offCanvasEl.show();
         });
@@ -27,19 +26,19 @@ document.addEventListener('DOMContentLoaded', function (e) {
     }, 200);
 
     setTimeout(() => {
-      const modifyRecord = document.querySelector('.modify-superAdmin'),
-        offCanvasElement = document.querySelector('#modify-superAdmin');
+      const modifyRecord = document.querySelector(".create-new-technicien"),
+        offCanvasElement = document.querySelector("#add-new-technicien");
 
       // To open offCanvas, to modify record
       if (modifyRecord) {
-        modifyRecord.addEventListener('click', function () {
+        modifyRecord.addEventListener("click", function () {
           offCanvasEl = new bootstrap.Offcanvas(offCanvasElement);
           // Empty fields on offCanvas open
-          (offCanvasElement.querySelector('.dt-full-name').value = 'Example '),
-            (offCanvasElement.querySelector('.dt-post').value = '22'),
-            (offCanvasElement.querySelector('.dt-email').value = ''),
-            (offCanvasElement.querySelector('.dt-date').value = ''),
-            (offCanvasElement.querySelector('.dt-salary').value = '');
+          (offCanvasElement.querySelector(".dt-full-name").value = "Example "),
+            (offCanvasElement.querySelector(".dt-post").value = "22"),
+            (offCanvasElement.querySelector(".dt-email").value = ""),
+            (offCanvasElement.querySelector(".dt-date").value = ""),
+            (offCanvasElement.querySelector(".dt-salary").value = "");
           // Open offCanvas with form
           offCanvasEl.show();
         });
@@ -47,19 +46,19 @@ document.addEventListener('DOMContentLoaded', function (e) {
     }, 200);
 
     setTimeout(() => {
-      const newTechnicien = document.querySelector('.create-new-technicien'),
-        offCanvasElement = document.querySelector('#add-new-technicien');
+      const newTechnicien = document.querySelector(".create-new-ing"),
+        offCanvasElement = document.querySelector("#add-new-ing");
 
       // To open offCanvas, to modify record
       if (newTechnicien) {
-        newTechnicien.addEventListener('click', function () {
+        newTechnicien.addEventListener("click", function () {
           offCanvasEl = new bootstrap.Offcanvas(offCanvasElement);
           // Empty fields on offCanvas open
-          (offCanvasElement.querySelector('.dt-full-name').value = ''),
-            (offCanvasElement.querySelector('.dt-post').value = ''),
-            (offCanvasElement.querySelector('.dt-email').value = ''),
-            (offCanvasElement.querySelector('.dt-date').value = ''),
-            (offCanvasElement.querySelector('.dt-salary').value = '');
+          (offCanvasElement.querySelector(".dt-full-name").value = ""),
+            (offCanvasElement.querySelector(".dt-post").value = ""),
+            (offCanvasElement.querySelector(".dt-email").value = ""),
+            (offCanvasElement.querySelector(".dt-date").value = ""),
+            (offCanvasElement.querySelector(".dt-salary").value = "");
           // Open offCanvas with form
           offCanvasEl.show();
         });
@@ -67,57 +66,19 @@ document.addEventListener('DOMContentLoaded', function (e) {
     }, 200);
 
     setTimeout(() => {
-      const addRegie = document.querySelector('.create-new-regie'),
-        offCanvasElement = document.querySelector('#add-new-regie');
+      const addRegie = document.querySelector(".create-new-regie"),
+        offCanvasElement = document.querySelector("#add-new-regie");
 
       // To open offCanvas, to modify record
       if (addRegie) {
-        addRegie.addEventListener('click', function () {
+        addRegie.addEventListener("click", function () {
           offCanvasEl = new bootstrap.Offcanvas(offCanvasElement);
           // Empty fields on offCanvas open
-          (offCanvasElement.querySelector('.dt-full-name').value = ''),
-            (offCanvasElement.querySelector('.dt-post').value = ''),
-            (offCanvasElement.querySelector('.dt-email').value = ''),
-            (offCanvasElement.querySelector('.dt-date').value = ''),
-            (offCanvasElement.querySelector('.dt-salary').value = '');
-          // Open offCanvas with form
-          offCanvasEl.show();
-        });
-      }
-    }, 200);
-    setTimeout(() => {
-      const modifyTechnicien = document.querySelector('.modify-technicien'),
-        offCanvasElement = document.querySelector('#modify-technicien');
-
-      // To open offCanvas, to modify record
-      if (modifyTechnicien) {
-        modifyTechnicien.addEventListener('click', function () {
-          offCanvasEl = new bootstrap.Offcanvas(offCanvasElement);
-          // Empty fields on offCanvas open
-          (offCanvasElement.querySelector('.dt-full-name').value = ''),
-            (offCanvasElement.querySelector('.dt-post').value = ''),
-            (offCanvasElement.querySelector('.dt-email').value = ''),
-            (offCanvasElement.querySelector('.dt-date').value = ''),
-            (offCanvasElement.querySelector('.dt-salary').value = '');
-          // Open offCanvas with form
-          offCanvasEl.show();
-        });
-      }
-    }, 200);
-    setTimeout(() => {
-      const modifyUser = document.querySelector('.modify-user'),
-        offCanvasElement = document.querySelector('#modify-user');
-
-      // To open offCanvas, to modify record
-      if (modifyUser) {
-        modifyUser.addEventListener('click', function () {
-          offCanvasEl = new bootstrap.Offcanvas(offCanvasElement);
-          // Empty fields on offCanvas open
-          (offCanvasElement.querySelector('.dt-full-name').value = ''),
-            (offCanvasElement.querySelector('.dt-post').value = ''),
-            (offCanvasElement.querySelector('.dt-email').value = ''),
-            (offCanvasElement.querySelector('.dt-date').value = ''),
-            (offCanvasElement.querySelector('.dt-salary').value = '');
+          (offCanvasElement.querySelector(".dt-full-name").value = ""),
+            (offCanvasElement.querySelector(".dt-post").value = ""),
+            (offCanvasElement.querySelector(".dt-email").value = ""),
+            (offCanvasElement.querySelector(".dt-date").value = ""),
+            (offCanvasElement.querySelector(".dt-salary").value = "");
           // Open offCanvas with form
           offCanvasEl.show();
         });
@@ -130,84 +91,85 @@ document.addEventListener('DOMContentLoaded', function (e) {
         basicFullname: {
           validators: {
             notEmpty: {
-              message: 'Champ Requis'
-            }
-          }
+              message: "Champ Requis",
+            },
+          },
         },
         basicPost: {
           validators: {
             notEmpty: {
-              message: 'Champ Requis'
-            }
-          }
+              message: "Champ Requis",
+            },
+          },
         },
         basicEmail: {
           validators: {
             notEmpty: {
-              message: 'Champ Requis'
+              message: "Champ Requis",
             },
             emailAddress: {
-              message: 'Besoin un valid email'
-            }
-          }
+              message: "Besoin un valid email",
+            },
+          },
         },
         psw: {
-          validators:{
+          validators: {
             notEmpty: {
-              message: 'Champ Requis'
+              message: "Champ Requis",
             },
             stringLength: {
               min: 8,
-              max: 30, 
+              max: 30,
               inclusive: true,
-              message : 'Mot de passe doit être entre 8 et 30 chiffres'
-            }
-          }
+              message: "Mot de passe doit être entre 8 et 30 chiffres",
+            },
+          },
         },
-        
+
         phoneNumber: {
           validators: {
             notEmpty: {
-              message: 'Champ Requis'
+              message: "Champ Requis",
             },
             numeric: {
-              message: 'Besoin un valid numéro'
-            }
-          }
+              message: "Besoin un valid numéro",
+            },
+          },
         },
 
         adresse: {
           validators: {
             notEmpty: {
-              message: 'Champ Requis',
+              message: "Champ Requis",
             },
-          }
-        }
+          },
+        },
       },
       plugins: {
         trigger: new FormValidation.plugins.Trigger(),
         bootstrap5: new FormValidation.plugins.Bootstrap5({
           // Use this for enabling/changing valid/invalid class
           // eleInvalidClass: '',
-          eleValidClass: '',
-          rowSelector: '.col-sm-12'
+          eleValidClass: "",
+          rowSelector: ".col-sm-12",
         }),
         submitButton: new FormValidation.plugins.SubmitButton(),
         // defaultSubmit: new FormValidation.plugins.DefaultSubmit(),
-        autoFocus: new FormValidation.plugins.AutoFocus()
+        autoFocus: new FormValidation.plugins.AutoFocus(),
       },
-      init: instance => {
-        instance.on('plugins.message.placed', function (e) {
-          if (e.element.parentElement.classList.contains('input-group')) {
-            e.element.parentElement.insertAdjacentElement('afterend', e.messageElement);
+      init: (instance) => {
+        instance.on("plugins.message.placed", function (e) {
+          if (e.element.parentElement.classList.contains("input-group")) {
+            e.element.parentElement.insertAdjacentElement(
+              "afterend",
+              e.messageElement
+            );
           }
         });
-      }
+      },
     });
-   
   })();
 });
-
 
 $(document).ready(function () {
   // Event listener for tab clicks
@@ -223,28 +185,23 @@ $(document).ready(function () {
   });
 
   // Simulate a click on the first tab when the page loads
-
-  
-
-  })
-
-$(document).ready(function() {
-  $(".editTypes").on("click", function(e) {
-      e.preventDefault();
-      // do this first 
-      var inputFields = $(".typeLabel");
-        inputFields.prop('readonly', true);
-        inputFields.removeClass('form-control').addClass('form-control-plaintext');
-      // then this 
-      var parentRow = $(this).closest('tr');
-      var inputField = parentRow.find('.typeLabel');
-      console.log(inputField.prop('readonly'));
-      inputField.prop('readonly', false);
-      inputField.removeClass('form-control-plaintext').addClass('form-control');
-  });
 });
 
-  
+$(document).ready(function () {
+  $(".editTypes").on("click", function (e) {
+    e.preventDefault();
+    // do this first
+    var inputFields = $(".typeLabel");
+    inputFields.prop("readonly", true);
+    inputFields.removeClass("form-control").addClass("form-control-plaintext");
+    // then this
+    var parentRow = $(this).closest("tr");
+    var inputField = parentRow.find(".typeLabel");
+    console.log(inputField.prop("readonly"));
+    inputField.prop("readonly", false);
+    inputField.removeClass("form-control-plaintext").addClass("form-control");
+  });
+});
 
 $(document).ready(function () {
   console.log("Doc is here");
@@ -460,7 +417,7 @@ $(document).ready(function () {
       //     defaultContent: '<button class="action-btn">Action</button>'
       //   },
       // ],
-      
+
       columnDefs: [
         {
           targets: [0, -1],
@@ -656,7 +613,7 @@ document.getElementById("addDoc").addEventListener("click", function () {
   // Create a new document area element
   var newDocumentArea = document.createElement("div");
   count++;
-  newDocumentArea.classList.add("mb-3", "col-md-3","col-12");
+  newDocumentArea.classList.add("mb-3", "col-md-3", "col-12");
 
   // HTML content for the new document area
   newDocumentArea.innerHTML = `
@@ -733,14 +690,12 @@ $(".js-example-placeholder-multiple").select2({
   allowClear: true,
 });
 
-// Toggle Status 
+// Toggle Status
 
 function toggleButtons(clickedButton) {
-    var buttons = clickedButton.parentElement.querySelectorAll('button');
+  var buttons = clickedButton.parentElement.querySelectorAll("button");
 
-    buttons.forEach(function(button) {
-        button.classList.toggle('d-none');
-    });
+  buttons.forEach(function (button) {
+    button.classList.toggle("d-none");
+  });
 }
-
-

@@ -879,6 +879,124 @@
                     </div>
                 </div>
                 <!-- End Modal to add technicien Terrain  -->
+                <!-- Modal to add technicien Terrain  -->
+                <div class="offcanvas offcanvas-end" id="add-new-ing">
+                    <div class="offcanvas-header border-bottom">
+                      <h5 class="offcanvas-title" id="exampleModalLabel">Nouveau Ingénieur</h5>
+                      <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body flex-grow-1">
+                      <form class="add-ing pt-0 row g-2" id="form-add-new-ing" onsubmit="return false">
+                        <div class="col-sm-12">
+                          <label class="form-label" for="basicFullname">Nom & Prénom</label>
+                          <div class="input-group input-group-merge">
+                            <span id="basicFullname2" class="input-group-text"><i class="ti ti-user"></i></span>
+                            <input
+                              type="text"
+                              id="basicFullname"
+                              class="form-control dt-full-name"
+                              name="basicFullname"
+                              placeholder="John Doe"
+                              aria-label="John Doe"
+                              aria-describedby="basicFullname2" />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="form-label" for="basicPost">Département</label>
+                          <div class="input-group input-group-merge">
+                            <span id="basicPost2" class="input-group-text"><i class="ti ti-briefcase"></i></span>
+                            <input
+                              type="text"
+                              id="basicPost"
+                              name="basicPost"
+                              class="form-control dt-post"
+                              placeholder="Web Developer"
+                              aria-label="Web Developer"
+                              aria-describedby="basicPost2" />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="form-label" for="basicEmail">Email</label>
+                          <div class="input-group input-group-merge">
+                            <span class="input-group-text"><i class="ti ti-mail"></i></span>
+                            <input
+                              type="text"
+                              id="basicEmail"
+                              name="basicEmail"
+                              class="form-control dt-email"
+                              placeholder="john.doe@example.com"
+                              aria-label="john.doe@example.com" />
+                          </div>
+                          <div class="form-text">Vous pouvez utiliser des lettres, des chiffres et des points</div>
+                        </div>
+                        
+                        <div class="col-sm-12">
+                          <label class="form-label" for="psw">Mot de passe</label>
+                          <div class="input-group input-group-merge">
+                            <span id="psw2" class="input-group-text"><i class="ti ti-lock"></i></span>
+                            <input
+                              type="password"
+                              class="form-control dt-date"
+                              id="psw"
+                              name="psw"
+                              aria-describedby=""
+                              />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="form-label" for="phoneNumber">Téléphone</label>
+                          <div class="input-group input-group-merge">
+                            <span id="phoneNumber2" class="input-group-text"><i class="ti ti-phone"></i></span>
+                            <input
+                              type="text"
+                              id="phoneNumber"
+                              name="phoneNumber"
+                              class="form-control dt-salary"
+                              placeholder="+99007788"
+                              aria-label="+99007788"
+                              aria-describedby="phoneNumber2" />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="form-label" for="adresse">Adresse</label>
+                          <div class="input-group input-group-merge">
+                            <span id="adresse2" class="input-group-text"><i class="ti ti-map-pin"></i></span>
+                            <input
+                              type="text"
+                              id="adresse"
+                              name="adresse"
+                              class="form-control dt-salary"
+                              placeholder=""
+                              aria-label=""
+                              aria-describedby="adresse2" />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="form-label" for="colors">Couleur</label>
+                          <div class="input-group input-group-merge">
+                            <!-- <span id="color2" class="input-group-text"><i class="ti ti-color-filter"></i></span> -->
+                            <input
+                              type="color"
+                              id="color"
+                              name="color"
+                              class="form-control dt-salary"
+                              placeholder=""
+                              aria-label=""
+                              aria-describedby="color2" />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <button type="submit" class="btn btn-primary data-submit me-sm-3 me-1">Ajouter</button>
+                          <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">Annuler</button>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+                <!-- End Modal to add technicien Terrain  -->
                 <!-- Modal to modify technicien Terrain  -->
                 <div class="offcanvas offcanvas-end" id="modify-technicien">
                     <div class="offcanvas-header border-bottom">

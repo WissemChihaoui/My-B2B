@@ -53,11 +53,10 @@ $(function () {
           render: function (data, type, full, meta) {
             var $assignedTo = full['assigned_to'];
             var roleOptions = {
-              Admin: 'Administrator',
-              Manager: 'Manager',
-              Users: 'Users',
-              Support: 'Support',
-              Restricted: 'Restricted User'
+              Admin: 'Admin',
+              Partenaire: 'Partenaire',
+              Regie: 'Régie',
+              Ingenieur: 'Ingénieur'
             };
             var $output = '<select multiple class="selectpicker w-100" data-style="btn-default">';
             for (var role in roleOptions) {
