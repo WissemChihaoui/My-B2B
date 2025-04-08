@@ -45,6 +45,8 @@
     <link rel="stylesheet" href="../assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" />
     <link rel="stylesheet" href="../assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" />
     <link rel="stylesheet" href="../assets/vendor/libs/flatpickr/flatpickr.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/select2/select2.css" />
+
     <!-- Row Group CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css" />
     <!-- Form Validation -->
@@ -165,53 +167,44 @@
                         <li class="nav-item">
                             <button type="button" class="nav-link active d-flex"
                                  style="gap: 24px; text-transform: uppercase" role="tab" data-bs-toggle="tab"
-                                 data-bs-target="#navs-justified-new" aria-selected="true" aria-controls="superAdminsTab"
-                                 data-tab="#superAdminsTab" role="tab">
+                                 data-bs-target="#navs-justified-new" aria-selected="true" aria-controls="adminTab"
+                                 data-tab="#adminTab" role="tab">
                                 <i class="ti-users ti me-0 me-sm-1 ti-xs"></i>
-                                 Super Admins
+                                 Admin
                               </button>
                         </li>
                         <li class="nav-item">
                             <button type="button" class="nav-link d-flex"
                                  style="gap: 24px; text-transform: uppercase" role="tab" data-bs-toggle="tab"
-                                 data-bs-target="#navs-justified-new" aria-selected="false" aria-controls="technicienTerrain"
-                                 data-tab="#technicienTerrain" role="tab">
+                                 data-bs-target="#navs-justified-new" aria-selected="false" aria-controls="partenaireTab"
+                                 data-tab="#partenaireTab" role="tab">
                                 <i class="ti-users ti me-0 me-sm-1 ti-xs"></i>
-                                 Technicien Terrain
+                                  Partenaire 
                               </button>
                         </li>
                         <li class="nav-item">
                             <button type="button" class="nav-link d-flex"
                                  style="gap: 24px; text-transform: uppercase" role="tab" data-bs-toggle="tab"
-                                 data-bs-target="#navs-justified-new" aria-selected="false" aria-controls="auditeur"
-                                 data-tab="#auditeur" role="tab">
+                                 data-bs-target="#navs-justified-new" aria-selected="false" aria-controls="regieTab"
+                                 data-tab="#regieTab" role="tab">
                                 <i class="ti-users ti me-0 me-sm-1 ti-xs"></i>
-                                 Auditeur
+                                  Régie 
                               </button>
                         </li>
                         <li class="nav-item">
                             <button type="button" class="nav-link d-flex"
                                  style="gap: 24px; text-transform: uppercase" role="tab" data-bs-toggle="tab"
-                                 data-bs-target="#navs-justified-new" aria-selected="false" aria-controls="auditeur"
-                                 data-tab="#partenaire" role="tab">
+                                 data-bs-target="#navs-justified-new" aria-selected="false" aria-controls="ingenieurTab"
+                                 data-tab="#ingenieurTab" role="tab">
                                 <i class="ti-users ti me-0 me-sm-1 ti-xs"></i>
-                                 Partenaire
-                              </button>
-                        </li>
-                        <li class="nav-item">
-                            <button type="button" class="nav-link d-flex"
-                                 style="gap: 24px; text-transform: uppercase" role="tab" data-bs-toggle="tab"
-                                 data-bs-target="#navs-justified-new" aria-selected="false" aria-controls="otherUsers"
-                                 data-tab="#otherUsers" role="tab">
-                                <i class="ti-users ti me-0 me-sm-1 ti-xs"></i>
-                                 Autres Utilisateurs
+                                  Ingénieur 
                               </button>
                         </li>
                     </ul>
                 </div>
                 <!-- DataTable with Buttons -->
                 <div class="card">
-                    <div class="table-content active" id="superAdminsTab">
+                    <div class="table-content active" id="adminTab">
 
                         <div class="card-datatable table-responsive pt-0 ">
                           <table class="datatables-superAdmin table">
@@ -254,7 +247,7 @@
 
                         
                     </div>
-                    <div id="technicienTerrain" class="hide table-content">
+                    <div id="partenaireTab" class="hide table-content">
                         <div class="card-datatable table-responsive pt-0 ">
                             <table class="datatables-technicienTerrain table">
                               <thead>
@@ -298,9 +291,9 @@
                             </table>
                           </div>
                     </div>
-                    <div id="auditeur" class="hide table-content">
+                    <div id="regieTab" class="hide table-content">
                         <div class="card-datatable table-responsive pt-0 ">
-                            <table class="datatables-technicienTerrain table">
+                            <table class="datatables-regie table">
                               <thead>
                                 <tr>
                                     <th>Nom & Prénom</th>
@@ -342,9 +335,9 @@
                             </table>
                           </div>
                     </div>
-                    <div id="partenaire" class="hide table-content">
+                    <div id="ingenieurTab" class="hide table-content">
                         <div class="card-datatable table-responsive pt-0 ">
-                            <table class="datatables-technicienTerrain table">
+                            <table class="datatables-ingenieur table">
                               <thead>
                                 <tr>
                                     <th>Nom & Prénom</th>
@@ -374,48 +367,6 @@
                                     <td>
                                         <div class="btn-group">
                                             <button class="btn btn-sm btn-warning modify-technicien">
-                                                <i class="ti ti-pencil ti-sm align-middle"></i>
-                                            </button>
-                                            <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteSuperAdmin">
-                                                <i class="ti ti-trash ti-sm align-middle"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                    </div>
-                    <div id="otherUsers" class="hide table-content">
-                        <div class="card-datatable table-responsive pt-0 ">
-                            <table class="datatables-otherUsers table">
-                              <thead>
-                                <tr>
-                                    <th>Nom & Prénom</th>
-                                    <th>Téléphone</th>
-                                    <th>Adresse</th>
-                                    <th>DPT</th>
-                                    <th>E-Mail</th>
-                                    <th>STE</th>
-                                    <th>Statut</th>
-                                    <th>Action</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                    <td>GENIUS prenom</td>
-                                    <td>telephone</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>admin@gmail.com</td>
-                                    <td>ITTAH DAVID</td>
-                                    <td class="status-toggle">
-                                        <button onclick="toggleStatus(this)" class="btn btn-xs btn-success">Actif</button>
-                                        <button onclick="toggleStatus(this)" class="btn btn-xs btn-danger d-none">Blocked</button>
-                                    </td>
-                                    <td>
-                                        <div class="btn-group">
-                                            <button class="btn btn-sm btn-warning modify-user">
                                                 <i class="ti ti-pencil ti-sm align-middle"></i>
                                             </button>
                                             <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteSuperAdmin">
@@ -432,7 +383,7 @@
                 <!-- Modal to add new record -->
                 <div class="offcanvas offcanvas-end" id="add-new-superAdmin">
                   <div class="offcanvas-header border-bottom">
-                    <h5 class="offcanvas-title" id="exampleModalLabel">Nouveau Super Admins</h5>
+                    <h5 class="offcanvas-title" id="exampleModalLabel">Nouveau admin</h5>
                     <button
                       type="button"
                       class="btn-close text-reset"
@@ -640,7 +591,7 @@
                 <!-- Modal to add technicien Terrain  -->
                 <div class="offcanvas offcanvas-end" id="add-new-technicien">
                     <div class="offcanvas-header border-bottom">
-                      <h5 class="offcanvas-title" id="exampleModalLabel">Nouveau Technicien Terrain</h5>
+                      <h5 class="offcanvas-title" id="exampleModalLabel">Nouveau Partenaire</h5>
                       <button
                         type="button"
                         class="btn-close text-reset"
@@ -690,6 +641,180 @@
                               aria-label="john.doe@example.com" />
                           </div>
                           <div class="form-text">Vous pouvez utiliser des lettres, des chiffres et des points</div>
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="form-label" for="psw">Mot de passe</label>
+                          <div class="input-group input-group-merge">
+                            <span id="psw2" class="input-group-text"><i class="ti ti-lock"></i></span>
+                            <input
+                              type="password"
+                              class="form-control dt-date"
+                              id="psw"
+                              name="psw"
+                              aria-describedby=""
+                              />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="form-label" for="phoneNumber">Téléphone</label>
+                          <div class="input-group input-group-merge">
+                            <span id="phoneNumber2" class="input-group-text"><i class="ti ti-phone"></i></span>
+                            <input
+                              type="text"
+                              id="phoneNumber"
+                              name="phoneNumber"
+                              class="form-control dt-salary"
+                              placeholder="+99007788"
+                              aria-label="+99007788"
+                              aria-describedby="phoneNumber2" />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="form-label" for="adresse">Adresse</label>
+                          <div class="input-group input-group-merge">
+                            <span id="adresse2" class="input-group-text"><i class="ti ti-map-pin"></i></span>
+                            <input
+                              type="text"
+                              id="adresse"
+                              name="adresse"
+                              class="form-control dt-salary"
+                              placeholder=""
+                              aria-label=""
+                              aria-describedby="adresse2" />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="form-label" for="colors">Couleur</label>
+                          <div class="input-group input-group-merge">
+                            <!-- <span id="color2" class="input-group-text"><i class="ti ti-color-filter"></i></span> -->
+                            <input
+                              type="color"
+                              id="color"
+                              name="color"
+                              class="form-control dt-salary"
+                              placeholder=""
+                              aria-label=""
+                              aria-describedby="color2" />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <button type="submit" class="btn btn-primary data-submit me-sm-3 me-1">Ajouter</button>
+                          <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">Annuler</button>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+                <!-- End Modal to add technicien Terrain  -->
+                <!-- Modal to add technicien Terrain  -->
+                <div class="offcanvas offcanvas-end" id="add-new-regie">
+                    <div class="offcanvas-header border-bottom">
+                      <h5 class="offcanvas-title" id="exampleModalLabel">Nouveau Régie</h5>
+                      <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body flex-grow-1">
+                      <form class="add-technicien pt-0 row g-2" id="form-add-new-technicien" onsubmit="return false">
+                        <div class="col-sm-12">
+                          <label class="form-label" for="basicFullname">Nom & Prénom</label>
+                          <div class="input-group input-group-merge">
+                            <span id="basicFullname2" class="input-group-text"><i class="ti ti-user"></i></span>
+                            <input
+                              type="text"
+                              id="basicFullname"
+                              class="form-control dt-full-name"
+                              name="basicFullname"
+                              placeholder="John Doe"
+                              aria-label="John Doe"
+                              aria-describedby="basicFullname2" />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="form-label" for="basicPost">Département</label>
+                          <div class="input-group input-group-merge">
+                            <span id="basicPost2" class="input-group-text"><i class="ti ti-briefcase"></i></span>
+                            <input
+                              type="text"
+                              id="basicPost"
+                              name="basicPost"
+                              class="form-control dt-post"
+                              placeholder="Web Developer"
+                              aria-label="Web Developer"
+                              aria-describedby="basicPost2" />
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="form-label" for="basicEmail">Email</label>
+                          <div class="input-group input-group-merge">
+                            <span class="input-group-text"><i class="ti ti-mail"></i></span>
+                            <input
+                              type="text"
+                              id="basicEmail"
+                              name="basicEmail"
+                              class="form-control dt-email"
+                              placeholder="john.doe@example.com"
+                              aria-label="john.doe@example.com" />
+                          </div>
+                          <div class="form-text">Vous pouvez utiliser des lettres, des chiffres et des points</div>
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="form-label" for="relatedTo">Partenaire</label>
+                          <div class="input-group input-group-merge w-100">
+                          <select id="relatedTo" class="select2 form-select w-100" data-allow-clear="true">
+                            <option value="AK">Alaska</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="CA">California</option>
+                            <option value="NV">Nevada</option>
+                            <option value="OR">Oregon</option>
+                            <option value="WA">Washington</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="CO">Colorado</option>
+                            <option value="ID">Idaho</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="UT">Utah</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TX">Texas</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="IN">Indiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="OH">Ohio</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WV">West Virginia</option>
+                          </select>
+                        </div>
                         </div>
                         <div class="col-sm-12">
                           <label class="form-label" for="psw">Mot de passe</label>
@@ -871,323 +996,7 @@
                     </div>
                 </div>
                 <!-- End Modal to modify technicien Terrain  -->
-                <!-- Modal to add user  -->
-                <div class="offcanvas offcanvas-end" id="add-new-user">
-                    <div class="offcanvas-header border-bottom">
-                      <h5 class="offcanvas-title" id="exampleModalLabel">Ajouter un utilisateur</h5>
-                      <button
-                        type="button"
-                        class="btn-close text-reset"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body flex-grow-1">
-                      <form class="add-technicien pt-0 row g-2" id="form-add-new-technicien" onsubmit="return false">
-                        <div class="col-sm-12">
-                          <label class="form-label" for="basicFullname">Nom & Prénom</label>
-                          <div class="input-group input-group-merge">
-                            <span id="basicFullname2" class="input-group-text"><i class="ti ti-user"></i></span>
-                            <input
-                              type="text"
-                              id="basicFullname"
-                              class="form-control dt-full-name"
-                              name="basicFullname"
-                              placeholder="John Doe"
-                              aria-label="John Doe"
-                              aria-describedby="basicFullname2" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <label class="form-label" for="basicPost">Département</label>
-                          <div class="input-group input-group-merge">
-                            <span id="basicPost2" class="input-group-text"><i class="ti ti-briefcase"></i></span>
-                            <input
-                              type="text"
-                              id="basicPost"
-                              name="basicPost"
-                              class="form-control dt-post"
-                              placeholder="Web Developer"
-                              aria-label="Web Developer"
-                              aria-describedby="basicPost2" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <label class="form-label" for="basicEmail">Email</label>
-                          <div class="input-group input-group-merge">
-                            <span class="input-group-text"><i class="ti ti-mail"></i></span>
-                            <input
-                              type="text"
-                              id="basicEmail"
-                              name="basicEmail"
-                              class="form-control dt-email"
-                              placeholder="john.doe@example.com"
-                              aria-label="john.doe@example.com" />
-                          </div>
-                          <div class="form-text">Vous pouvez utiliser des lettres, des chiffres et des points</div>
-                        </div>
-                        <div class="col-sm-12">
-                          <label class="form-label" for="psw">Mot de passe</label>
-                          <div class="input-group input-group-merge">
-                            <span id="psw2" class="input-group-text"><i class="ti ti-lock"></i></span>
-                            <input
-                              type="password"
-                              class="form-control dt-date"
-                              id="psw"
-                              name="psw"
-                              aria-describedby=""
-                              />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <label class="form-label" for="phoneNumber">Téléphone</label>
-                          <div class="input-group input-group-merge">
-                            <span id="phoneNumber2" class="input-group-text"><i class="ti ti-phone"></i></span>
-                            <input
-                              type="text"
-                              id="phoneNumber"
-                              name="phoneNumber"
-                              class="form-control dt-salary"
-                              placeholder="+99007788"
-                              aria-label="+99007788"
-                              aria-describedby="phoneNumber2" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <label class="form-label" for="adresse">Adresse</label>
-                          <div class="input-group input-group-merge">
-                            <span id="adresse2" class="input-group-text"><i class="ti ti-map-pin"></i></span>
-                            <input
-                              type="text"
-                              id="adresse"
-                              name="adresse"
-                              class="form-control dt-salary"
-                              placeholder=""
-                              aria-label=""
-                              aria-describedby="adresse2" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <label class="form-label" for="adresse">Nom du société</label>
-                          <div class="input-group input-group-merge">
-                            <span id="nomSociete2" class="input-group-text"><i class="ti ti-map-pin"></i></span>
-                            <input
-                              type="text"
-                              id="nomSociete"
-                              name="nomSociete"
-                              class="form-control dt-salary"
-                              placeholder=""
-                              aria-label=""
-                              aria-describedby="nomSociete2" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <label class="form-label" for="adresse">SIRET</label>
-                          <div class="input-group input-group-merge">
-                            <span id="siret2" class="input-group-text"><i class="ti ti-map-pin"></i></span>
-                            <input
-                              type="text"
-                              id="siret"
-                              name="siret"
-                              class="form-control dt-salary"
-                              placeholder=""
-                              aria-label=""
-                              aria-describedby="siret2" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label class="form-label" for="basicEmail">Email dirigeant 1</label>
-                            <div class="input-group input-group-merge">
-                              <span class="input-group-text"><i class="ti ti-mail"></i></span>
-                              <input
-                                type="text"
-                                id="basicEmail"
-                                name="basicEmail"
-                                class="form-control dt-email"
-                                placeholder="john.doe@example.com"
-                                aria-label="john.doe@example.com" />
-                            </div>
-                            <div class="form-text">Vous pouvez utiliser des lettres, des chiffres et des points</div>
-                          </div><div class="col-sm-12">
-                            <label class="form-label" for="basicEmail">Email dirigeant 2</label>
-                            <div class="input-group input-group-merge">
-                              <span class="input-group-text"><i class="ti ti-mail"></i></span>
-                              <input
-                                type="text"
-                                id="basicEmail"
-                                name="basicEmail"
-                                class="form-control dt-email"
-                                placeholder="john.doe@example.com"
-                                aria-label="john.doe@example.com" />
-                            </div>
-                            <div class="form-text">Vous pouvez utiliser des lettres, des chiffres et des points</div>
-                          </div>
-                        
-                        <div class="col-sm-12">
-                          <button type="submit" class="btn btn-primary data-submit me-sm-3 me-1">Ajouter</button>
-                          <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">Annuler</button>
-                        </div>
-                      </form>
-                    </div>
-                </div>
-                <!-- End Modal to add user -->
-                <!-- Modal to add user  -->
-                <div class="offcanvas offcanvas-end" id="modify-user">
-                    <div class="offcanvas-header border-bottom">
-                      <h5 class="offcanvas-title" id="exampleModalLabel">Modifier un utilisateur</h5>
-                      <button
-                        type="button"
-                        class="btn-close text-reset"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body flex-grow-1">
-                      <form class="add-technicien pt-0 row g-2" id="form-add-new-technicien" onsubmit="return false">
-                        <div class="col-sm-12">
-                          <label class="form-label" for="basicFullname">Nom & Prénom</label>
-                          <div class="input-group input-group-merge">
-                            <span id="basicFullname2" class="input-group-text"><i class="ti ti-user"></i></span>
-                            <input
-                              type="text"
-                              id="basicFullname"
-                              class="form-control dt-full-name"
-                              name="basicFullname"
-                              placeholder="John Doe"
-                              aria-label="John Doe"
-                              aria-describedby="basicFullname2" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <label class="form-label" for="basicPost">Département</label>
-                          <div class="input-group input-group-merge">
-                            <span id="basicPost2" class="input-group-text"><i class="ti ti-briefcase"></i></span>
-                            <input
-                              type="text"
-                              id="basicPost"
-                              name="basicPost"
-                              class="form-control dt-post"
-                              placeholder="Web Developer"
-                              aria-label="Web Developer"
-                              aria-describedby="basicPost2" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <label class="form-label" for="basicEmail">Email</label>
-                          <div class="input-group input-group-merge">
-                            <span class="input-group-text"><i class="ti ti-mail"></i></span>
-                            <input
-                              type="text"
-                              id="basicEmail"
-                              name="basicEmail"
-                              class="form-control dt-email"
-                              placeholder="john.doe@example.com"
-                              aria-label="john.doe@example.com" />
-                          </div>
-                          <div class="form-text">Vous pouvez utiliser des lettres, des chiffres et des points</div>
-                        </div>
-                        <div class="col-sm-12">
-                          <label class="form-label" for="psw">Mot de passe</label>
-                          <div class="input-group input-group-merge">
-                            <span id="psw2" class="input-group-text"><i class="ti ti-lock"></i></span>
-                            <input
-                              type="password"
-                              class="form-control dt-date"
-                              id="psw"
-                              name="psw"
-                              aria-describedby=""
-                              />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <label class="form-label" for="phoneNumber">Téléphone</label>
-                          <div class="input-group input-group-merge">
-                            <span id="phoneNumber2" class="input-group-text"><i class="ti ti-phone"></i></span>
-                            <input
-                              type="text"
-                              id="phoneNumber"
-                              name="phoneNumber"
-                              class="form-control dt-salary"
-                              placeholder="+99007788"
-                              aria-label="+99007788"
-                              aria-describedby="phoneNumber2" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <label class="form-label" for="adresse">Adresse</label>
-                          <div class="input-group input-group-merge">
-                            <span id="adresse2" class="input-group-text"><i class="ti ti-map-pin"></i></span>
-                            <input
-                              type="text"
-                              id="adresse"
-                              name="adresse"
-                              class="form-control dt-salary"
-                              placeholder=""
-                              aria-label=""
-                              aria-describedby="adresse2" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <label class="form-label" for="adresse">Nom du société</label>
-                          <div class="input-group input-group-merge">
-                            <span id="nomSociete2" class="input-group-text"><i class="ti ti-map-pin"></i></span>
-                            <input
-                              type="text"
-                              id="nomSociete"
-                              name="nomSociete"
-                              class="form-control dt-salary"
-                              placeholder=""
-                              aria-label=""
-                              aria-describedby="nomSociete2" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <label class="form-label" for="adresse">SIRET</label>
-                          <div class="input-group input-group-merge">
-                            <span id="siret2" class="input-group-text"><i class="ti ti-map-pin"></i></span>
-                            <input
-                              type="text"
-                              id="siret"
-                              name="siret"
-                              class="form-control dt-salary"
-                              placeholder=""
-                              aria-label=""
-                              aria-describedby="siret2" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label class="form-label" for="basicEmail">Email dirigeant 1</label>
-                            <div class="input-group input-group-merge">
-                              <span class="input-group-text"><i class="ti ti-mail"></i></span>
-                              <input
-                                type="text"
-                                id="basicEmail"
-                                name="basicEmail"
-                                class="form-control dt-email"
-                                placeholder="john.doe@example.com"
-                                aria-label="john.doe@example.com" />
-                            </div>
-                            <div class="form-text">Vous pouvez utiliser des lettres, des chiffres et des points</div>
-                          </div><div class="col-sm-12">
-                            <label class="form-label" for="basicEmail">Email dirigeant 2</label>
-                            <div class="input-group input-group-merge">
-                              <span class="input-group-text"><i class="ti ti-mail"></i></span>
-                              <input
-                                type="text"
-                                id="basicEmail"
-                                name="basicEmail"
-                                class="form-control dt-email"
-                                placeholder="john.doe@example.com"
-                                aria-label="john.doe@example.com" />
-                            </div>
-                            <div class="form-text">Vous pouvez utiliser des lettres, des chiffres et des points</div>
-                          </div>
-                        
-                        <div class="col-sm-12">
-                          <button type="submit" class="btn btn-primary data-submit me-sm-3 me-1">Ajouter</button>
-                          <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">Annuler</button>
-                        </div>
-                      </form>
-                    </div>
-                </div>
+               
                 <!-- End Modal to add user -->
              </div>
           
@@ -1235,6 +1044,8 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/select2/select2.js"></script>
+
     <script src="../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
     <!-- Flat Picker -->
     <script src="../assets/vendor/libs/moment/moment.js"></script>
@@ -1247,6 +1058,7 @@
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
     <script src="../script.js"></script>
+    <script src="../assets//js/employer.js"></script>
 
     <!-- Page JS -->
     <script src="../assets/js/tables-datatables-basic.js"></script>
