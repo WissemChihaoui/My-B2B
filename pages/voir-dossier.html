@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+
+<html
+  lang="fr"
+  class="light-style layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="horizontal-menu-template"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Dashboard</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/img/favicon/favicon.ico" 
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/rtl/core.css"
+      class="template-customizer-core-css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/rtl/theme-default.css"
+      class="template-customizer-theme-css"
+    />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/flatpickr/flatpickr.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/bootstrap-datepicker/bootstrap-datepicker.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/jquery-timepicker/jquery-timepicker.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/pickr/pickr-themes.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/node-waves/node-waves.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/typeahead-js/typeahead.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/animate-css/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/sweetalert2/sweetalert2.css"
+    />
+    <link rel="stylesheet" href="../assets/vendor/libs/select2/select2.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/@form-validation/umd/styles/index.min.css"
+    />
+
+    <!-- Page CSS -->
+
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/pages/page-user-view.css"
+    />
+    <link rel="stylesheet" href="../assets/vendor/libs/quill/typography.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/quill/katex.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/quill/editor.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/dropzone/dropzone.css" />
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="../assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <div
+      class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu"
+    >
+      <div class="layout-container">
+        <!-- Navbar -->
+        <nav
+          class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme"
+          id="layout-navbar"
+        >
+          <div class="container-xxl">
+            <div class="nothing d-xl-block d-none"></div> <!--this div necassary to align logo in center-->
+            <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
+              <a href="index.html" class="app-brand-link gap-2">
+                <span class="app-brand-logo demo">
+                  <img src="../assets/img/mainLogo.png" style="width: 100%" />
+                </span>
+                <span class="app-brand-text demo menu-text fw-bold"
+                  >Geniuscontrole</span
+                >
+              </a>
+              <a
+                href="javascript:void(0);"
+                class="layout-menu-toggle menu-link text-large ms-auto d-xl-none"
+              >
+                <i class="ti ti-x ti-sm align-middle"></i>
+              </a>
+            </div>
+            <div
+              class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+            >
+              <a
+                class="nav-item nav-link px-0 me-xl-4"
+                href="javascript:void(0)"
+              >
+                <i class="ti ti-menu-2 ti-sm"></i>
+              </a>
+            </div>
+            <div class="nav-item navbar-dropdown dropdown-user dropdown">
+              <a
+                class="nav-link dropdown-toggle hide-arrow"
+                href="javascript:void(0);"
+                data-bs-toggle="dropdown"
+              >
+                <div class="avatar avatar-online">
+                  <img
+                    src="../assets/img/avatars/1.png"
+                    alt
+                    class="h-auto rounded-circle"
+                  />
+                </div>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/pages/auth/login.html"
+                    target="_blank"
+                  >
+                    <i class="ti ti-logout me-2 ti-sm"></i>
+                    <span class="align-middle">Se déconnecter</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Search Small Screens -->
+            <div
+              class="navbar-search-wrapper search-input-wrapper container-xxl d-none"
+            >
+              <input
+                type="text"
+                class="form-control search-input border-0"
+                placeholder="Search..."
+                aria-label="Search..."
+              />
+              <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+            </div>
+          </div>
+        </nav>
+        <div class="layout-page">
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Menu -->
+            <aside
+            id="layout-menu"
+            class="layout-menu-horizontal menu-horizontal menu bg-menu-theme flex-grow-0"
+          >
+            <div class="container-xxl d-flex h-100">
+              <ul class="menu-inner">
+                <!-- Dossier -->
+                <li class="menu-item active">
+                  <a href="/index.html" class="menu-link">
+                    <i class="menu-icon tf-icons ti ti-folder"></i>
+                    <div>Dossier</div>
+                  </a>
+                </li>
+                <!-- Employer -->
+                <li class="menu-item">
+                  <a href="/pages/employer.html" class="menu-link">
+                    <i class="menu-icon tf-icons ti ti-users-group"></i>
+                    <div>Employe</div>
+                  </a>
+                </li>
+                <!-- Pages -->
+                <li class="menu-item">
+                  <a href="/pages/export.html" class="menu-link">
+                    <i class="menu-icon tf-icons ti ti-package-export"></i>
+                    <div>Export</div>
+                  </a>
+                </li>
+                <!-- Components -->
+                <li class="menu-item">
+                  <a href="/pages/config.html" class="menu-link">
+                    <i class="menu-icon tf-icons ti ti-settings-2"></i>
+                    <div>Config</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+            <div class="container-xxl flex-grow-1 container-p-y" style="max-width: max-content;">
+              <div class="row">
+                
+                <div class="col-xl-8 col-lg-7 col-md-7">
+                  <div class="card mb-4">
+                    <div class="card-header d-flex justify-content-between">
+                      <h5>Documents</h5>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#addDoc"
+                      >
+                        Ajouter
+                      </button>
+                    </div>
+                    <div class="table-responsive mb-3">
+                      <table class="table datatable-viewDoc border-top">
+                        <thead>
+                          <tr>
+                            <th>Fichier</th>
+                            <th>Commentaire</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>synthese 2</td>
+                            <td>synthese modifié</td>
+                            <td>2023-04-25 05:30:34</td>
+                            <td><div class="btn-group">
+                              <!-- <button type="button" class="btn btn-primary"></button> -->
+                              <button
+                                type="button"
+                                class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"
+                                style="    border-top-right-radius: 6px;
+                                border-bottom-right-radius: 6px;">
+                                <span style="margin-right: 6px;">Actions</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Voir Fichier</a>
+                                <a class="dropdown-item" href="#" >Télécharger le Fichier</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item btn-danger" href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#deleteDoc">Supprimer fiche</a>
+                              </div>
+                            </div>
+                            </td>
+                          </tr>
+                         
+                          <tr>
+                            <td>synthese 2</td>
+                            <td>synthese modifié</td>
+                            <td>2023-04-25 05:30:34</td>
+                            <td><div class="btn-group">
+                              <!-- <button type="button" class="btn btn-primary"></button> -->
+                              <button
+                                type="button"
+                                class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"
+                                style="    border-top-right-radius: 6px;
+                                border-bottom-right-radius: 6px;">
+                                <span style="margin-right: 6px;">Actions</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Voir Fichier</a>
+                                <a class="dropdown-item" href="#" >Télécharger le Fichier</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item btn-danger" href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#deleteDoc">Supprimer fiche</a>
+                              </div>
+                            </div>
+                            </td>
+                          </tr>
+                         
+                          <tr>
+                            <td>synthese 2</td>
+                            <td>synthese modifié</td>
+                            <td>2023-04-25 05:30:34</td>
+                            <td><div class="btn-group">
+                              <!-- <button type="button" class="btn btn-primary"></button> -->
+                              <button
+                                type="button"
+                                class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"
+                                style="    border-top-right-radius: 6px;
+                                border-bottom-right-radius: 6px;">
+                                <span style="margin-right: 6px;">Actions</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Voir Fichier</a>
+                                <a class="dropdown-item" href="#" >Télécharger le Fichier</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item btn-danger" href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#deleteDoc">Supprimer fiche</a>
+                              </div>
+                            </div>
+                            </td>
+                          </tr>
+                         
+                          <tr>
+                            <td>synthese 2</td>
+                            <td>synthese modifié</td>
+                            <td>2023-04-25 05:30:34</td>
+                            <td><div class="btn-group">
+                              <!-- <button type="button" class="btn btn-primary"></button> -->
+                              <button
+                                type="button"
+                                class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"
+                                style="    border-top-right-radius: 6px;
+                                border-bottom-right-radius: 6px;">
+                                <span style="margin-right: 6px;">Actions</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Voir Fichier</a>
+                                <a class="dropdown-item" href="#" >Télécharger le Fichier</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item btn-danger" href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#deleteDoc">Supprimer fiche</a>
+                              </div>
+                            </div>
+                            </td>
+                          </tr>
+                         
+                          <tr>
+                            <td>synthese 2</td>
+                            <td>synthese modifié</td>
+                            <td>2023-04-25 05:30:34</td>
+                            <td><div class="btn-group">
+                              <!-- <button type="button" class="btn btn-primary"></button> -->
+                              <button
+                                type="button"
+                                class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"
+                                style="    border-top-right-radius: 6px;
+                                border-bottom-right-radius: 6px;">
+                                <span style="margin-right: 6px;">Actions</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Voir Fichier</a>
+                                <a class="dropdown-item" href="#" >Télécharger le Fichier</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item btn-danger" href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#deleteDoc">Supprimer fiche</a>
+                              </div>
+                            </div>
+                            </td>
+                          </tr>
+                         
+                          <tr>
+                            <td>synthese 2</td>
+                            <td>synthese modifié</td>
+                            <td>2023-04-25 05:30:34</td>
+                            <td><div class="btn-group">
+                              <!-- <button type="button" class="btn btn-primary"></button> -->
+                              <button
+                                type="button"
+                                class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"
+                                style="    border-top-right-radius: 6px;
+                                border-bottom-right-radius: 6px;">
+                                <span style="margin-right: 6px;">Actions</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Voir Fichier</a>
+                                <a class="dropdown-item" href="#" >Télécharger le Fichier</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item btn-danger" href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#deleteDoc">Supprimer fiche</a>
+                              </div>
+                            </div>
+                            </td>
+                          </tr>
+                         
+                          <tr>
+                            <td>synthese 2</td>
+                            <td>synthese modifié</td>
+                            <td>2023-04-25 05:30:34</td>
+                            <td><div class="btn-group">
+                              <!-- <button type="button" class="btn btn-primary"></button> -->
+                              <button
+                                type="button"
+                                class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"
+                                style="    border-top-right-radius: 6px;
+                                border-bottom-right-radius: 6px;">
+                                <span style="margin-right: 6px;">Actions</span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Voir Fichier</a>
+                                <a class="dropdown-item" href="#" >Télécharger le Fichier</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item btn-danger" href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#deleteDoc">Supprimer fiche</a>
+                              </div>
+                            </div>
+                            </td>
+                          </tr>
+                         
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- comments  -->
+                  <div class="card mb-4">
+                    <h5 class="card-header">Commentaires</h5>
+                    <div class="card-body">
+                      <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="../assets/img/avatars/10.png"
+                            alt=""
+                            height="36"
+                            class="rounded-circle"
+                          />
+                          <div
+                            class="d-flex w-100 justify-content-between ms-2"
+                          >
+                            <div class="d-flex flex-column">
+                              <div
+                                class="font-weight-bold"
+                                style="font-weight: bold"
+                              >
+                                Genius
+                              </div>
+                              <span class="text-muted" style="font-size: 12px"
+                                >23.11.20 15:05</span
+                              >
+                            </div>
+                            <button
+                              class="btn btn-danger btn-sm waves-effect waves-light"
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-toggle="modal"
+                              data-bs-target="#deleteComment"
+                            >
+                              <i class="ti ti-sm align-middle ti-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <p>
+                            DEMANDE A ETRE RAPPELE LA SEMAINE DU 3 DECEMBRE CAR
+                            EN DEPLACEMENT
+                          </p>
+                        </div>
+                      </div>
+                      <hr class="m-0 mb-1" />
+                      <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="../assets/img/avatars/10.png"
+                            alt=""
+                            height="36"
+                            class="rounded-circle"
+                          />
+                          <div
+                            class="d-flex w-100 justify-content-between ms-2"
+                          >
+                            <div class="d-flex flex-column">
+                              <div
+                                class="font-weight-bold"
+                                style="font-weight: bold"
+                              >
+                                Genius
+                              </div>
+                              <span class="text-muted" style="font-size: 12px"
+                                >23.11.20 15:05</span
+                              >
+                            </div>
+                            <button
+                              class="btn btn-danger btn-sm waves-effect waves-light"
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-toggle="modal"
+                              data-bs-target="#deleteComment"
+                              >
+                              <i class="ti ti-sm align-middle ti-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <p>
+                            DEMANDE A ETRE RAPPELE LA SEMAINE DU 3 DECEMBRE CAR
+                            EN DEPLACEMENT
+                          </p>
+                        </div>
+                      </div>
+                      <hr class="m-0 mb-1" />
+                      <div class="col-12 justify-content-end d-flex">
+                        <button
+                          class="btn btn-primary btn-sm flex-end"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#addCommentModal"
+                        >
+                          <i class="ti ti-pencil-plus ti-md"></i>
+                          <span class="ms-2">Ajouter un commentaire</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End comments -->
+                  <div class="card mb-4">
+                    <h5 class="card-header">Dossier</h5>
+                    <div class="card-body">
+                      <h6>Détails du Client</h6>
+                      <div class="row">
+                        <div class="col-12 col-lg-6 col-md-12 mb-3">
+                          <label>Client</label>
+                          <input
+                            value="PERDREAU MARIE"
+                            type="text"
+                            class="form-control"
+                            id=""
+                            placeholder="Nom et Prénom"
+                            aria-describedby="defaultFormControlHelp"
+                          />
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6 mb-3">
+                          <label>Téléphone</label>
+                          <input
+                            value="06-67-00-03-18"
+                            type="text"
+                            class="form-control"
+                            id=""
+                            placeholder="N° Téléphone"
+                            aria-describedby="defaultFormControlHelp"
+                          />
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6 mb-3">
+                          <label>Ville</label>
+                          <input
+                            value="Montgeron"
+                            type="text"
+                            class="form-control"
+                            id=""
+                            placeholder="Villz"
+                            aria-describedby="defaultFormControlHelp"
+                          />
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        
+                        <div class="col-12 col-lg-3 col-md-6 mb-3">
+                          <label>Code Postal</label>
+                          <input
+                            value="91230"
+                            type="email"
+                            class="form-control"
+                            id=""
+                            placeholder="Code Postal"
+                            aria-describedby="defaultFormControlHelp"
+                          />
+                        </div>
+                        <div class="col-12 col-lg-9 col-md-6 mb-3">
+                          <label>Adresse</label>
+                          <input
+                            value="34 Rue de la Châtaigneraie, Montgeron, France"
+                            type="text"
+                            class="form-control"
+                            id=""
+                            placeholder="Adresse"
+                            aria-describedby="defaultFormControlHelp"
+                          />
+                        </div>
+                        
+                      </div>
+                      <div class="col-12 mb-3">
+                        <label for="commentaireDossier">Commentaire</label>
+                        <textarea
+                          class="form-control"
+                          id="commentaireDossier"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                      <div class="btn btn-primary">Modifier</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-5 col-md-5 order-1 order-md-0">
+                  <div class="mb-4">
+                    <h5 class="">Statut</h5>
+                    <div class="">
+                      <div class="d-flex row">
+                        
+                        <div class="col-12 mb-2">
+                          <select
+                            id="modalEditUserCountry"
+                            name="modalEditUserCountry"
+                            class="select2 form-select"
+                            data-allow-clear="true"
+                          >
+                            <option value="">Select</option>
+                            <option value="Prise de RDV">Prise de RDV</option>
+                            <option value="Problème RDV">Problème RDV</option>
+                            <option value="RDV Attente Visite">
+                              RDV Attente Visite
+                            </option>
+                            <option value="RDV Visite">RDV Visite</option>
+                            <option value="Contrôle RT">Contrôle RT</option>
+                            <option value="Action Corrective">
+                              Action Corrective
+                            </option>
+                            <option value="Rapport Genius">
+                              Rapport Genius
+                            </option>
+                            <option value="Dossier FACTURÉ">
+                              Dossier FACTURÉ
+                            </option>
+                            <option value="Dossier Annulé">
+                              Dossier Annulé
+                            </option>
+                          </select>
+                        </div>
+                        <div class="d-flex">
+                          <button type="button" class="btn btn-primary">
+                            Changer Statut
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <h5 class="">Rendez-Vous</h5>
+                    <div class="">
+                      <div class="d-flex row">
+                        
+                        <div class="col-12 mb-2">
+                          <label for="flatpickr-datetime" class="form-label"
+                            >2023-11-29 16:30</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="YYYY-MM-DD HH:MM"
+                            id="flatpickr-datetime"
+                          />
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <button type="button" class="btn btn-primary">
+                            RDV
+                          </button>
+                          <a href="#" class="btn btn-warning">Agenda</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-4">
+                    <h5 class="card-header">Client</h5>
+                    <div class="card-body">
+                      <div class="d-flex row">
+                        <div class="d-flex flex-wrap col-12 mb-4">
+                          <div class="avatar me-3">
+                            <img
+                              src="../assets/img/avatars/3.png"
+                              alt="Avatar"
+                              class="rounded-circle"
+                            />
+                          </div>
+                          <div>
+                            <h6 class="mb-0">ATELIER DU BATIMENT</h6>
+                            <small>hazanallan@gmail.com</small>
+                          </div>
+                        </div>
+                        <div
+                          class="col-12 d-flex align-items-center justify-content-end"
+                        >
+                          <div
+                            class="btn-group col-12"
+                            role="group"
+                            aria-label="Basic example"
+                          >
+                            <a
+                              href="tel:0646460203"
+                              class="btn btn-success w-100"
+                            >
+                              <span class="ti-xs ti ti-phone me-1"></span>
+                              0646460203
+                            </a>
+                            <a
+                              href="mailto:hazanallan@gmail.com"
+                              type="button"
+                              class="btn btn-warning waves-effect waves-light"
+                              ><span class="ti-xs ti ti-mail me-1"></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-4">
+                    <h5 class="card-header">Technicien</h5>
+                    <div class="card-body">
+                      <div class="d-flex row">
+                        <div class="d-flex flex-wrap col-12 mb-4">
+                          <div class="avatar me-3">
+                            <img
+                              src="../assets/img/avatars/3.png"
+                              alt="Avatar"
+                              class="rounded-circle"
+                            />
+                          </div>
+                          <div>
+                            <h6 class="mb-0">ATELIER DU BATIMENT</h6>
+                            <small>hazanallan@gmail.com</small>
+                          </div>
+                        </div>
+                        <div
+                          class="col-12 d-flex align-items-center justify-content-end"
+                        >
+                          <div
+                            class="btn-group col-12"
+                            role="group"
+                            aria-label="Basic example"
+                          >
+                            <a
+                              href="tel:0646460203"
+                              class="btn btn-success w-100"
+                            >
+                              <span class="ti-xs ti ti-phone me-1"></span>
+                              0646460203
+                            </a>
+                            <a
+                              href="mailto:hazanallan@gmail.com"
+                              type="button"
+                              class="btn btn-warning waves-effect waves-light"
+                              ><span class="ti-xs ti ti-mail me-1"></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Timeline -->
+                  <div class="mb-4 mb-xl-0 col-12">
+                    <div class="card">
+                      <h5 class="card-header">Historique</h5>
+                      <div class="card-body pb-0">
+                        <ul class="timeline mb-0">
+                          <li class="timeline-item timeline-item-transparent">
+                            <span
+                              class="timeline-point timeline-point-primary"
+                            ></span>
+                            <div class="timeline-event">
+                              <div class="timeline-header border-bottom mb-3">
+                                <h6 class="mb-0">PRISE DE RDV</h6>
+                                <span class="text-muted">15-11-2023 16:30</span>
+                              </div>
+                              <div
+                                class="d-flex justify-content-between flex-wrap mb-2"
+                              >
+                                <div class="d-flex align-items-center">
+                                  <span
+                                    >Create dossier fiche th 164 /22 /
+                                    travaux</span
+                                  >
+                                </div>
+                                <div>
+                                  <span class="text-muted"
+                                    >ATELIER DU BATIMENT</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="timeline-item timeline-item-transparent">
+                            <span
+                              class="timeline-point timeline-point-success"
+                            ></span>
+                            <div class="timeline-event">
+                              <div class="timeline-header border-bottom mb-3">
+                                <h6 class="mb-0">PRISE DE RDV</h6>
+                                <span class="text-muted">15-11-2023 16:38</span>
+                              </div>
+                              <div
+                                class="d-flex justify-content-between flex-wrap mb-2"
+                              >
+                                <div class="d-flex align-items-center">
+                                  <span
+                                    >RDV le 2023-11-27 10:30 pour dossier fiche
+                                    th 164 /22 / travaux</span
+                                  >
+                                </div>
+                                <div>
+                                  <span class="text-muted">GENIUS</span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Timeline -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal  -->
+      <!-- Ajouter Document Modal  -->
+      <div class="modal fade " id="addDoc" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel2">Ajouter un nouveau document</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body p-2">
+              <div class="m-0 row col-12">
+                <div class="mb-3">
+                  <label class="form-label" for="nom-doc"
+                    >Nom document</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nom-doc"
+                    placeholder="Indiquez un nom du document"
+                    name="nomDoc"
+                    aria-label="nomDoc"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="description" class="form-label"
+                    >Description</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="description"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <form
+                    action="/upload"
+                    class="dropzone needsclick"
+                    id="dropzone-basic"
+                  >
+                    <div class="dz-message needsclick">
+                      Déposez les fichiers ici ou cliquez pour télécharger
+                      
+                      
+                    </div>
+                    <div class="fallback">
+                      <input name="file" type="file" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-label-secondary"
+                data-bs-dismiss="modal"
+              >
+                Fermer
+              </button>
+              <button type="button" class="btn btn-primary">Enregistrer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Ajouter Document Modal  -->
+      <!-- Ajouter Commentaire Modal  -->
+      <div
+        class="modal fade"
+        id="addCommentModal"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel2">
+                Ajouter Votre Commentaire
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body p-2">
+              <div
+                id="documentAreaContainer"
+                class="documentAreaContainer m-0 row col-12"
+              >
+                <div class="mb-3">
+                 
+                  <textarea
+                    class="form-control"
+                    id="description"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div style="width: max-content;">
+
+                  <label class="switch switch-primary">
+                    <input type="checkbox" class="switch-input" checked="">
+                    <span class="switch-toggle-slider">
+                      <span class="switch-on">
+                        <i class="ti ti-lock"></i>
+                      </span>
+                      <span class="switch-off">
+                        <i class="ti ti-lock-open"></i>
+                      </span>
+                    </span>
+                    <span class="switch-label">Privée?</span>
+                  </label>
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-label-secondary"
+                data-bs-dismiss="modal"
+              >
+                Annuler
+              </button>
+              <button type="button" class="btn btn-primary">Publier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Ajouter Commentaire Modal  -->
+      <!-- Delete Comment Modal  -->
+      <div class="modal fade " id="deleteComment" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+          <div class="modal-content bg-danger">
+            <div class="modal-header">
+              
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h2 class="text-white text-center">Êtes-vous sûr de supprimer ce commentaire?</h2>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
+                Annuler
+              </button>
+              <button type="button" class="btn btn-white text-danger">Supprimer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Delete  Comment Modal  -->
+      <!-- End Modal  -->
+
+      <!-- Actions Modal  -->
+      <!-- delete doc modal -->
+      <div class="modal fade " id="deleteDoc" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+          <div class="modal-content bg-danger">
+            <div class="modal-header">
+              
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h2 class="text-white text-center">Êtes-vous sûr de supprimer ce document?</h2>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
+                Annuler
+              </button>
+              <button type="button" class="btn btn-white text-danger">Supprimer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End delete doc modal -->
+      <!-- Modifier Doc Modal  -->
+      <div class="modal fade " id="modifyDoc" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel2">Modifier ce document</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body p-2">
+              <div class="m-0 row col-12">
+                <div class="mb-3">
+                  <label class="form-label" for="nom-doc"
+                    >Nom document</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nom-doc"
+                    placeholder="Indiquez un nom du document"
+                    name="nomDoc"
+                    aria-label="nomDoc"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="description" class="form-label"
+                    >Description</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="description"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <form
+                    action="/upload"
+                    class="dropzone needsclick"
+                    id="dropzone-basic"
+                  >
+                    <div class="dz-message needsclick">
+                      Déposez les fichiers ici ou cliquez pour télécharger
+                      
+                      
+                    </div>
+                    <div class="fallback">
+                      <input name="file" type="file" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-label-secondary"
+                data-bs-dismiss="modal"
+              >
+                Fermer
+              </button>
+              <button type="button" class="btn btn-primary">Enregistrer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modifier Doc Modal  -->
+      <!-- valider Doc modal  -->
+      <div class="modal fade " id="validDoc" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+          <div class="modal-content bg-success">
+            <div class="modal-header">
+              
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h2 class="text-white text-center">Confirmer la validation de ce document</h2>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
+                Annuler
+              </button>
+              <button type="button" class="btn btn-white text-success">Valider</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End valider Doc Modal  -->
+      <!-- End Actions Modal  -->
+    </div>
+    <div class="layout-overlay layout-menu-toggle"></div>
+
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+
+    <!--/ Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <script src="../assets/vendor/libs/flatpickr/flatpickr.js"></script>
+    <script src="../assets/vendor/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+    <script src="../assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.js"></script>
+    <script src="../assets/vendor/libs/jquery-timepicker/jquery-timepicker.js"></script>
+    <script src="../assets/vendor/libs/pickr/pickr.js"></script>
+
+    <script src="../assets/vendor/libs/moment/moment.js"></script>
+    <script src="../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src="../assets/vendor/libs/sweetalert2/sweetalert2.js"></script>
+    <script src="../assets/vendor/libs/cleavejs/cleave.js"></script>
+    <script src="../assets/vendor/libs/cleavejs/cleave-phone.js"></script>
+    <script src="../assets/vendor/libs/select2/select2.js"></script>
+    <script src="../assets/vendor/libs/@form-validation/umd/bundle/popular.min.js"></script>
+    <script src="../assets/vendor/libs/@form-validation/umd/plugin-bootstrap5/index.min.js"></script>
+    <script src="../assets/vendor/libs/@form-validation/umd/plugin-auto-focus/index.min.js"></script>
+
+    <!-- Main JS -->
+    <!-- <script src="../assets/js/main.js"></script> -->
+    <script src="./voirDossier.js"></script>
+
+    <!-- Page JS -->
+    <script src="../assets/js/modal-edit-user.js"></script>
+    <script src="../assets/js/app-user-view.js"></script>
+    <!-- <script src="../assets/js/app-user-view-account.js"></script> -->
+    <script src="../assets/js/forms-pickers.js"></script>
+
+    <script src="../assets/vendor/libs/quill/katex.js"></script>
+    <script src="../assets/vendor/libs/quill/quill.js"></script>
+    <script src="../assets/vendor/libs/select2/select2.js"></script>
+    <script src="../assets/vendor/libs/dropzone/dropzone.js"></script>
+    <script src="../assets/vendor/libs/jquery-repeater/jquery-repeater.js"></script>
+    <script src="../assets/vendor/libs/flatpickr/flatpickr.js"></script>
+    <script src="../assets/vendor/libs/tagify/tagify.js"></script>
+
+    <script src="../assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
+
+    <script src="../assets/vendor/libs/bloodhound/bloodhound.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+    <!-- <script src="../script.js"></script> -->
+
+    <!-- Page JS -->
+    <script src="../assets/js/app-ecommerce-product-add.js"></script>
+    <script src="../assets/js/forms-selects.js"></script>
+    <script src="../assets/js/forms-tagify.js"></script>
+    <script src="../assets/js/forms-typeahead.js"></script>
+    <script src="../assets/js/forms-file-upload.js"></script>
+  </body>
+</html>

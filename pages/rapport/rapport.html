@@ -1,0 +1,2484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+        html {
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            font-size: 11px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            page-break-after: always;
+            text-align: -webkit-center;
+            margin-bottom: 75px;
+        }
+
+        .primary {
+            color: #e8d497;
+        }
+
+        .secondary {
+            color: #7a7c7c;
+        }
+
+        .white {
+            color: #fff;
+        }
+
+        .bg-primary {
+            background: #e8d497;
+        }
+
+        .bg-secondary {
+            background: #7a7c7c;
+        }
+
+        .bg-white {
+            background: #fdf5db;
+        }
+
+        tr,
+        th {
+            text-align: center;
+        }
+
+        td,
+        th {
+            padding: 2px 6px;
+            text-align: -webkit-center;
+        }
+
+        .left td,
+        .left th {
+            text-align: left !important;
+        }
+
+        #page2 td,
+        #page2 th {
+            padding: 8px 6px;
+        }
+
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0cm;
+            left: 0cm;
+            right: 0cm;
+            height: 70px;
+        }
+
+
+        input[type="checkbox"] {
+            appearance: none;
+            display: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        /* Create custom checkbox */
+        input[type="checkbox"]+.custom-checkbox-label {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            background-color: #7a7c7c;
+            /* Your desired color */
+            border-radius: 4px;
+            border: 1px solid #fff;
+            /* Border color */
+            cursor: pointer;
+        }
+
+        /* Style for checked state */
+        input[type="checkbox"]:checked+.custom-checkbox-label::before {
+            content: "\2713";
+            /* Checkmark symbol */
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 20px;
+            /* Center the checkmark */
+            font-size: 16px;
+            color: #fff;
+            /* Color for the checkmark */
+        }
+
+        /* Style for disabled state */
+        input[type="checkbox"]:disabled+.custom-checkbox-label {
+            opacity: 0.5;
+            /* Dim the checkbox for disabled state */
+            cursor: not-allowed;
+        }
+
+
+        .table-border {
+            border-collapse: collapse;
+
+        }
+
+        .table-border tr {
+            border-bottom: 1px solid #7a7c7c;
+            /* Your border color */
+        }
+
+        .table-border td {
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body id="paper">
+
+    <!-- Start Page 1 -->
+    <section id="page1">
+        <table>
+            <tr>
+                <td>
+                    <img src="./mainLogo.png" alt="logo" style="width: 120px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1 style="text-transform: uppercase" class="secondary">
+                        <span class="primary">Rapport </span> D'INSPECTION
+                    </h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="secondary" style="font-weight: 700; font-size: 16px">
+                        2024-010203
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="primary">th 164 /22 / audit</h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="secondary" style="display: flex; flex-direction: column; gap: 1px">
+                    <span>Accréditation COFRAC N°3-1902</span><br />
+                    <span>Portée disponible sur le site www.cofrac.fr</span><br />
+                    <span>Date de fin de validité de l’accréditation 30/09/2026</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="primary">Paris, le 01-01-1970</h3>
+                </td>
+            </tr>
+            <tr>
+                <td style="display: flex" colspan="3">
+                    <table style="width: 100%">
+                        <thead class="bg-secondary white">
+                            <th colspan="3">LIEU D'INTERVENTION</th>
+                        </thead>
+                        <tbody class="bg-primary" style="background: #e8d497">
+                            <tr>
+                                <td>
+                                    <b>99 quai du docteur dervaux, 92600 Asniéres sur seine 
+                                        France</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Asniéres sur seine</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>92600</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table>
+                        <thead>
+                            <th class="bg-secondary white">TECHNICIEN</th>
+                        </thead>
+                        <tbody class="bg-primary">
+                            <tr>
+                                <td style="font-weight: 700">SACHA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./codeQr.svg" alt="codeQr" style="width: 280px" />
+                        </td>
+
+                        <td>satisfaisant logo</td>
+
+                        <td>
+                            <div style="border: 1px black solid; width: 200px; height: 200px">
+                                signature
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </tr>
+            <tr>
+                <td colspan="3" class="secondary" style="display: flex; flex-direction: column; gap: 1px">
+                    <b style="font-size: 18px">GENIUS CONTROLE</b><br />
+                    <span>83 BD BERTHIER 75017 PARIS</span><br />
+                    <span>SIREN N°904489515 - RCS Paris B 904 489 515</span>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <!-- End Page 1 -->
+    <!-- Start Page 2 -->
+    <section id="page2">
+        <table style="width: 100%">
+            <thead>
+                <th style="width: 50%">
+                    <img src="./mainLogo.png" alt="logo" style="width: 120px" />
+                </th>
+                <th style="width: 50%">
+                    <h1 style="text-transform: uppercase" class="secondary">
+                        <span class="primary">Rapport </span> D'INSPECTION
+                    </h1>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="bg-primary">
+                        <span><b>DATE DE LA VISITE :</b>02/01/2024</span><br />
+                        <span><b>N° DE RAPPORT :</b>2024-2115</span><br />
+                    </td>
+                    <td class="bg-primary">
+                        <span><b>SACHA</b></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="width: 100%">
+                            <thead class="bg-secondary white">
+                                <th colspan="3">LIEU D'INTERVENTION</th>
+                            </thead>
+                            <tbody class="bg-primary">
+                                <tr>
+                                    <td>
+                                        <b>41 Rue de Mourette, 77260 La Ferté-sousJouarre,
+                                            France</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>25002</td>
+                                </tr>
+                                <tr>
+                                    <td>La Ferté-sous-Jouarre</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <table style="width: 100%">
+                            <thead class="bg-secondary white">
+                                <th colspan="3">NOM DU BENEFICIAIRE</th>
+                            </thead>
+                            <tbody class="bg-primary">
+                                <tr>
+                                    <td>
+                                        <b>ULYSSE RUTH</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b><a href="mailto:ruthjuju27@gmail.com">ruthjuju27@gmail.com</a></b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="tel:+222555222">22 255 52 22</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        41 Rue de Mourette, 77260 La Ferté-sousJouarre, France
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="width: 100%">
+                            <thead class="bg-secondary white">
+                                <th colspan="3">ENTREPRISE AYANT RÉALISÉ LES TRAVAUX</th>
+                            </thead>
+                            <tbody class="bg-primary">
+                                <tr>
+                                    <td>
+                                        <b>Nom de Société</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Siren</td>
+                                </tr>
+                                <tr>
+                                    <td>Adresse, ville, code postale</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <table style="width: 100%">
+                            <thead class="bg-secondary white">
+                                <th colspan="3">ENTREPRISE AYANT RÉALISÉ L'ÉTUDE</th>
+                            </thead>
+                            <tbody class="bg-primary">
+                                <tr>
+                                    <td>
+                                        <b>Nom </b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N° SIREN</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        41 Rue de Mourette, 77260 La Ferté-sousJouarre, France
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%">
+                            <tbody class="bg-primary">
+                                <tr>
+                                    <td style=""><b>N° Devis :</b> 25258885858</td>
+                                    <td style=""><b>N° Facture :</b> 25258885858</td>
+                                    <td style=" display: flex;justify-content: center; align-items: center;"><b style="text-wrap: nowrap;">
+                                        Cadre De Contribution :</b>
+                                        <div style="display: flex; align-items: center;">
+                                            <input type="checkbox" id="custom-checkbox" disabled checked>
+                                            <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                            <span>Oui</span>
+                                        </div>
+                                        <div style="display: flex; align-items: center;">
+                                            <input type="checkbox" id="custom-checkbox" disabled>
+                                            <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                            <span>Non</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%">
+                            <thead class="white">
+                                <th class="bg-secondary" style="width: 33.33%">
+                                    DATE DE VISITE
+                                </th>
+                                <th class="bg-secondary" style="width: 33.33%">CONTROLEUR</th>
+                                <th class="bg-secondary" style="width: 33.33%">VISA</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>02/01/2024</td>
+                                    <td>ETHN</td>
+                                    <td>signature</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p class="secondary" style="font-size: 12px; font-weight: 300">
+                            Rapport validé par Samuel Zeitoun et Horodaté via Universign
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <footer class="bg-primary white" style="width: 100%">
+            <b>GENIUS CONTROLE</b>
+            <p>83 BD BERTHIER 75017 PARIS</p>
+            <p>SIREN N°904489515 - RCS Paris B 904 489 515</p>
+        </footer>
+    </section>
+
+    <!-- End Page 2 -->
+    <!-- Start Page 3 -->
+    <section id="page3">
+        <table style="width: 100%;">
+            <thead>
+                <th style="width: 50%">
+                    <img src="./mainLogo.png" alt="logo" style="width: 120px" />
+                </th>
+                <th style="width: 50%">
+                    <h1 style="text-transform: uppercase" class="secondary">
+                        <span class="primary">Rapport </span> D'INSPECTION
+                    </h1>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%;" class="left">
+                            <thead class="bg-secondary white">
+                                <th colspan="3">
+                                    <h2>Conclusion de la verification</h2>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                        <span>Satisfaisant</span>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                        <span>Non Satisfaisant</span>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                        <span>Inaccessible / Non Verifiable</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%;" class="left table-border">
+                            <thead class="bg-secondary white">
+                                <th colspan="3">
+                                    <h2>Conditions de vérification - Réalité des travaux</h2>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>OUI</td>
+                                    <td>NON</td>
+                                </tr>
+                                <tr>
+                                    <td>Opération sélectionée aléatoirement</td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Le chantier est accessible et les travaux ont été réalisés</td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Le chantier est accessible et les travaux n'ont pas été réalisés</td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Rendez-vous confirmé et accès au chantier refusé par le bénéficiaire</td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bénéficiaire absent le jour du rendez-vous </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%;" class="left table-border">
+                            <thead class="bg-secondary white">
+                                <th colspan="3">
+                                    <h2>Vérification des conditions d'éligibilité de l'opération</h2>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>OUI</td>
+                                    <td>NON</td>
+                                </tr>
+                                <tr>
+                                    <td>Bâtiment existant de plus de 2 ans à la date d'engagement de l'opération</td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Année de construction déclarée par le bénéficiaire
+                                    </td>
+                                    <td colspan="2">1962</td>
+                                </tr>
+                                <tr>
+                                    <td>Les travaux comportent au moins un geste dans l'une des catégories suivantes
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%;" class="left">
+                            <thead class="bg-secondary white">
+                                <th colspan="3">
+                                    <h3>
+                                        Travaux d'isolation thermique des murs couvrant au moins 75% de la surface
+                                        totale des murs donnant sur l'éxtérieur et mettant en oeuvre un procédé
+                                        d'isolation par l'intérieur ou par l'extérieur
+                                    </h3>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                        <span>Sans Objet</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <table style="width: 100%;" class="left table-border">
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" id="custom-checkbox" disabled checked>
+                                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                                    <span>Intérieur</span>
+                                                </td>
+                                                <td>
+                                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                                    <span>Extérieur</span>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Surface totale mesurée extérieurs</td>
+                                                <td>2525</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Surface isolée mesurée (m²)</td>
+                                                <td>2525</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Totale de couverture calculé (%)</td>
+                                                <td>2525</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" id="custom-checkbox" disabled checked>
+                                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                                    <span>Satisfaisant</span>
+                                                </td>
+                                                <td>
+                                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                                    <span>Non Satisfaisant</span>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- End Page 3 -->
+    <!-- Start Page 4 -->
+    <section id="page4">
+        <table style="width: 100%;">
+            <thead>
+                <th style="width: 50%">
+                    <img src="./mainLogo.png" alt="logo" style="width: 120px" />
+                </th>
+                <th style="width: 50%">
+                    <h1 style="text-transform: uppercase" class="secondary">
+                        <span class="primary">Rapport </span> D'INSPECTION
+                    </h1>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%;" class="left">
+                            <thead class="bg-secondary white">
+                                <th colspan="3">
+                                    <h5>
+                                        Travaux d'isolation thermique des toitures mettant en oeuvre un procédé
+                                        d'isolation comportant un ou des matériaux d'isolation thermique en
+                                        toiture-terrasse ou en rampant de toiture et couvrant au moins 75% de la surface
+                                        totale des toitures
+                                    </h5>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                        <span>Sans Objet</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <table style="width: 100%;" class="left table-border">
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" id="custom-checkbox" disabled checked>
+                                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                                    <span>Toiture-terrasse</span>
+                                                </td>
+                                                <td>
+                                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                                    <span>Rampant de toiture</span>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Surface totale mesurée extérieurs</td>
+                                                <td>2525</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Surface isolée mesurée (m²)</td>
+                                                <td>2525</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Totale de couverture calculé (%)</td>
+                                                <td>2525</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" id="custom-checkbox" disabled checked>
+                                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                                    <span>Satisfaisant</span>
+                                                </td>
+                                                <td>
+                                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                                    <span>Non Satisfaisant</span>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%;" class="left">
+                            <thead class="bg-secondary white">
+                                <th>
+                                    <h5>
+                                        Travaux d'isolation thermique des combies perdus et des planchers bas et
+                                        couvrant au moins 75% de la surface totale des planchers des combles perdus et
+                                        des planchers
+                                    </h5>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                        <span>Sans Objet</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td >
+                                    <table style="width: 100%;" class="table-border">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                                    <span>Combles perdus</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Surface totale mesurée extérieurs
+                                                </td>
+                                                <td>
+                                                    2544
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Surface isolée mesurée (m²)
+                                                </td>
+                                                <td>
+                                                    2544
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Totale de couverture calculé (%)
+                                                </td>
+                                                <td>
+                                                    2544
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" id="custom-checkbox" disabled checked>
+                                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                                    <span>Satisfaisant</span>
+                                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                                    <span>Non Satisfaisant</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td >
+                                    <table style="width: 100%;" class="table-border">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                                    <span>Planchers bas</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Surface totale mesurée extérieurs
+                                                </td>
+                                                <td>
+                                                    2544
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Surface isolée mesurée (m²)
+                                                </td>
+                                                <td>
+                                                    2544
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Totale de couverture calculé (%)
+                                                </td>
+                                                <td>
+                                                    2544
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" id="custom-checkbox" disabled checked>
+                                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                                    <span>Satisfaisant</span>
+                                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                                    <span>Non Satisfaisant</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table style="width: 100%;" class="table-border">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        Les traveaux permettent d'atteindre une baisse de consommation conventionelle annuelle en énergie primaire (sans déduction de la production d'électrictié autoconsommée ou exportée) sur les usages chauffage, refroidissement et production d'eau chaude sanitaire d'au moins 55%
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Les changements d'équipements de chauffage ou de production d'eau chaude santaire n'ont pas conduit :
+                                                        <ul>
+                                                            <li>à l'installation de chaudières consommant du cahrbon ou de fioul</li>
+                                                            <li>à l'installation de chaudières consommant du gaz autre autres qu'a condensation</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Les ont conduit au changement de tous les équipements de chauffage ou de production d'eau chaude sanitaire ou charbon ou au fioul non performants.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- ENd Page 4 -->
+    <!-- Start Page 5 -->
+    <section id="page5">
+        <table style="width: 100%;">
+            <thead>
+                <th style="width: 50%">
+                    <img src="./mainLogo.png" alt="logo" style="width: 120px" />
+                </th>
+                <th style="width: 50%">
+                    <h1 style="text-transform: uppercase" class="secondary">
+                        <span class="primary">Rapport </span> D'INSPECTION
+                    </h1>
+                </th>
+            </thead>
+            <tbody>
+                <tr class="bg-secondary white">
+                    <td colspan="3">
+                        <h2>
+                            Etude Energetique
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%;" class="left table-border">
+                            <thead>
+                                <th></th>
+                                <th>OUI</th>
+                                <th>NON</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Atteste d'une visite sur place de l'entreprise ayant réalisée l'étude énergétique
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Pour les opérations engagées avant le 1er avril 2021, de la conformité aux dispositions du Il de l'article 18 bis de l'annexe 4 du code général des impôts dans sa rédaction en vigueur au 15 février 2020
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Pour les opérations engagées à compter du 1er avril 2021, de la conformité au dernier alinéa du IV de l'article 3-5-1 de l'arrêté du 29 décembre 2014 modifié relatif aux modalités d'application du dispositif des certificats d'économies d'énergie, sans préjudice des exigences particulières de la fiche d'opération standardisée BAR-TH-164
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mentionne les valeurs des consommations conventionnelles en énergie primaire et en énergie finale avant et après l'opération ayant servi à déterminer l'éligibilité au présent Coup de pouce et le niveau de prime associé
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mentionne les taux d'énergies renouvelables ou de récupération des systèmes de chauffage ou de production d'eau chaude sanitaire du bâtiment, après travaux
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        Pour laquelle, il est vérifié que :
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Le niveau de confort thermique de la situation finale est équivalent ou meilleur que celui de la situation initiale, y compris en période de rigueur hivernale
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        La production d'électricité sur site n'est pas retranchée des consommations énergétiques, et n'est pas prise en compte dans le numérateur du taux de chaleur renouvelable
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Seules les consommations liées aux usages chauffage, refroidissement et production d'eau chaude sanitaire sont prises en compte
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Seules les installations fixes de chauffage sont prises en compte (des appoints mobiles de type effet joule ne peuvent par exemple pas être considérés pour définir la situation initiale)	
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- End Page 5 -->
+    <!-- Start Page 6 and 7 -->
+    <section id="page6">
+        <table style="width: 100%;">
+            <thead>
+                <th style="width: 50%">
+                    <img src="./mainLogo.png" alt="logo" style="width: 120px" />
+                </th>
+                <th style="width: 50%">
+                    <h1 style="text-transform: uppercase" class="secondary">
+                        <span class="primary">Rapport </span> D'INSPECTION
+                    </h1>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%;" class="table-border left">
+                            <thead class="bg-secondary white">
+                                <th>
+                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    <span>Sans Objet</span>
+                                </th>
+                                <th colspan="5">
+                                    <h2>Procéde d'Isolation en Rampants de Toiture</h2>
+                                    
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        
+                                    </td>
+                                    <td>
+                                        <span>Confrome</span>
+                                    </td>
+                                    <td>
+                                        <span>Non Confrome</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Marque, Référence
+                                    </td>
+                                    <td colspan="2">
+                                        2533
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Epaisseur de l'isolant (mm)
+                                    </td>
+                                    <td colspan="2">
+                                        0
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Résistance thermique (m² .k/W)
+                                    </td>
+                                    <td colspan="2">
+                                        ≥4,5
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width: 100%;" class="table-border left">
+                            <thead class="bg-secondary white">
+                                <th>
+                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    <span>Sans Objet</span>
+                                </th>
+                                <th colspan="5">
+                                    <h2>Procede d’Isolation en Comble Perdu</h2>
+                                    
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        
+                                    </td>
+                                    <td>
+                                        <span>Confrome</span>
+                                    </td>
+                                    <td>
+                                        <span>Non Confrome</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Marque, Référence
+                                    </td>
+                                    <td colspan="2">
+                                        2533
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Epaisseur de l'isolant (mm)
+                                    </td>
+                                    <td colspan="2">
+                                        0
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Résistance thermique (m² .k/W)
+                                    </td>
+                                    <td colspan="2">
+                                        ≥4,5
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width: 100%;" class="table-border left">
+                            <thead class="bg-secondary white">
+                                <th>
+                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    <span>Sans Objet</span>
+                                </th>
+                                <th colspan="5">
+                                    <h2>Procede d’Isolation en Plancher Bas</h2>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        
+                                    </td>
+                                    <td>
+                                        <span>Confrome</span>
+                                    </td>
+                                    <td>
+                                        <span>Non Confrome</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Marque, Référence
+                                    </td>
+                                    <td colspan="2">
+                                        2533
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Epaisseur de l'isolant (mm)
+                                    </td>
+                                    <td colspan="2">
+                                        0
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Résistance thermique (m² .k/W)
+                                    </td>
+                                    <td colspan="2">
+                                        ≥4,5
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width: 100%;" class="table-border left">
+                            <thead class="bg-secondary white">
+                                <th>
+                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    <span>Sans Objet</span>
+                                </th>
+                                <th colspan="5">
+                                    <h2>Proceded Isolation Thermique Exterieur</h2>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        
+                                    </td>
+                                    <td>
+                                        <span>Confrome</span>
+                                    </td>
+                                    <td>
+                                        <span>Non Confrome</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Marque, Référence
+                                    </td>
+                                    <td colspan="2">
+                                        2533
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Epaisseur de l'isolant (mm)
+                                    </td>
+                                    <td colspan="2">
+                                        0
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Résistance thermique (m² .k/W)
+                                    </td>
+                                    <td colspan="2">
+                                        ≥4,5
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width: 100%;" class="table-border left">
+                            <thead class="bg-secondary white">
+                                <th>
+                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    <span>Sans Objet</span>
+                                </th>
+                                <th colspan="5">
+                                    <h2>Proceded Isolation Thermique Interieur</h2>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        
+                                    </td>
+                                    <td>
+                                        <span>Confrome</span>
+                                    </td>
+                                    <td>
+                                        <span>Non Confrome</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Marque, Référence
+                                    </td>
+                                    <td colspan="2">
+                                        2533
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Epaisseur de l'isolant (mm)
+                                    </td>
+                                    <td colspan="2">
+                                        0
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Résistance thermique (m² .k/W)
+                                    </td>
+                                    <td colspan="2">
+                                        ≥4,5
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width: 100%;" class="table-border left">
+                            <thead class="bg-secondary white">
+                                <th>
+                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    <span>Sans Objet</span>
+                                </th>
+                                <th colspan="5">
+                                    <h2>Chauffe-Eau Thermodynamique a Accumulation</h2>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        
+                                    </td>
+                                    <td>
+                                        <span>Confrome</span>
+                                    </td>
+                                    <td>
+                                        <span>Non Confrome</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Marque, Référence
+                                    </td>
+                                    <td colspan="2">
+                                        2533
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        COP (l'acteur annuelle de performance)
+                                    </td>
+                                    <td colspan="2">
+                                        0
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Coefficient de performance / Sur air extrait
+                                    </td>
+                                    <td colspan="2">
+                                        >2,5
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Coefficient de performance / Autres installations 
+                                    </td>
+                                    <td colspan="2">
+                                        >2,4
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width: 100%;" class="table-border left">
+                            <thead class="bg-secondary white">
+                                <th>
+                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    <span>Sans Objet</span>
+                                </th>
+                                <th colspan="5">
+                                    <h2>Pompe a Chaleur de Type Air/Air</h2>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        
+                                    </td>
+                                    <td>
+                                        <span>Confrome</span>
+                                    </td>
+                                    <td>
+                                        <span>Non Confrome</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Marque, Référence
+                                    </td>
+                                    <td colspan="2">
+                                        2533
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        COP (l'acteur annuelle de performance)
+                                    </td>
+                                    <td colspan="2">
+                                        0
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Puissance (kW)
+                                    </td>
+                                    <td colspan="2">
+                                        2,5
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width: 100%;" class="table-border left">
+                            <thead class="bg-secondary white">
+                                <th>
+                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    <span>Sans Objet</span>
+                                </th>
+                                <th colspan="5">
+                                    <h2>Pompe a Chaleur de Type Air/Eau</h2>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        
+                                    </td>
+                                    <td>
+                                        <span>Confrome</span>
+                                    </td>
+                                    <td>
+                                        <span>Non Confrome</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Marque, Référence
+                                    </td>
+                                    <td colspan="2">
+                                        2533
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        COP (l'acteur annuelle de performance)
+                                    </td>
+                                    <td colspan="2">
+                                        0
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Puissance (kW)
+                                    </td>
+                                    <td colspan="2">
+                                        2,5
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width: 100%;" class="table-border left">
+                            <thead class="bg-secondary white">
+                                <th>
+                                    <input type="checkbox" id="custom-checkbox" disabled>
+                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    <span>Sans Objet</span>
+                                </th>
+                                <th colspan="5">
+                                    <h2>Chauffe Eau Solaire Indivuduel</h2>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        
+                                    </td>
+                                    <td>
+                                        <span>Confrome</span>
+                                    </td>
+                                    <td>
+                                        <span>Non Confrome</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Marque, Référence
+                                    </td>
+                                    <td colspan="2">
+                                        2533
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Epaisseur de l'isolant (mm)
+                                    </td>
+                                    <td colspan="2">
+                                        0
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Résistance thermique (m² .k/W)
+                                    </td>
+                                    <td colspan="2">
+                                        ≥4,5
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width: 100%;" class="table-border left">
+                            <thead class="bg-secondary white">
+                                <th>
+                                    <input type="checkbox" id="custom-checkbox" disabled checked>
+                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    <span>Sans Objet</span>
+                                </th>
+                                <th colspan="5">
+                                    <h2>Ventilation Mecanique Simple Flux Hydroreglable</h2>
+                                </th>
+                            </thead>
+                        </table>
+                        <table style="width: 100%;" class="table-border left">
+                            <thead class="bg-secondary white">
+                                <th>
+                                    <input type="checkbox" id="custom-checkbox" disabled checked>
+                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    <span>Sans Objet</span>
+                                </th>
+                                <th colspan="5">
+                                    <h2>Ventilation Mecanique Double Flux Individuelle Modulee</h2>
+                                </th>
+                            </thead>
+                        </table>
+                        <table style="width: 100%;" class="table-border left">
+                            <thead class="bg-secondary white">
+                                <th>
+                                    <input type="checkbox" id="custom-checkbox" disabled checked>
+                                    <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    <span>Sans Objet</span>
+                                </th>
+                                <th colspan="5">
+                                    <h2>Ventilation Mecanique Simple Flux Individuelle Autoreglable</h2>
+                                </th>
+                            </thead>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- End Page 6 and 7 -->
+    <!-- Start Page 8 -->
+    <section id="page8">
+        <table style="width: 100%;">
+            <thead>
+                <th style="width: 50%">
+                    <img src="./mainLogo.png" alt="logo" style="width: 120px" />
+                </th>
+                <th style="width: 50%">
+                    <h1 style="text-transform: uppercase" class="secondary">
+                        <span class="primary">Rapport </span> D'INSPECTION
+                    </h1>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%;" class="left table-border">
+                            <thead class="bg-secondary white">
+                                <tr>
+                                    <th colspan="6">
+                                        <h2>Vérification De La Qualification Des Entreprises</h2>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>Travaux</th>
+                                    <th>Raison Sociale</th>
+                                    <th>N° SIREN</th>
+                                    <th>Organisme</th>
+                                    <th>N° Certification</th>
+                                    <th>Avis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Mise en place d'une pompe à chaleur de type air/air
+                                    </td>
+                                    <td>
+                                        ECO BATI FRANCE
+                                    </td>
+                                    <td>
+                                        905381489
+                                    </td>
+                                    <td>
+                                        QUALIBAT
+                                    </td>
+                                    <td>
+                                        E-E195464 03/01/2024 VALABLE
+                                    </td>
+                                    <td>
+                                        Satisfaisant
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mise en place d'une pompe à chaleur de type air/air
+                                    </td>
+                                    <td>
+                                        ECO BATI FRANCE
+                                    </td>
+                                    <td>
+                                        905381489
+                                    </td>
+                                    <td>
+                                        QUALIBAT
+                                    </td>
+                                    <td>
+                                        E-E195464 03/01/2024 VALABLE
+                                    </td>
+                                    <td>
+                                        Satisfaisant
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mise en place d'une pompe à chaleur de type air/air
+                                    </td>
+                                    <td>
+                                        ECO BATI FRANCE
+                                    </td>
+                                    <td>
+                                        905381489
+                                    </td>
+                                    <td>
+                                        QUALIBAT
+                                    </td>
+                                    <td>
+                                        E-E195464 03/01/2024 VALABLE
+                                    </td>
+                                    <td>
+                                        Satisfaisant
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                       
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                       
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- End Page 8 -->
+    <!-- Start Page 9 -->
+    <section id="page9">
+        <table style="width: 100%;">
+            <thead>
+                <th style="width: 50%">
+                    <img src="./mainLogo.png" alt="logo" style="width: 120px" />
+                </th>
+                <th style="width: 50%">
+                    <h1 style="text-transform: uppercase" class="secondary">
+                        <span class="primary">Rapport </span> D'INSPECTION
+                    </h1>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%;" class="table-border left">
+                            <thead class="bg-secondary white">
+                                <tr>
+                                    <th colspan="4">
+                                        <h2>
+                                            Appreciation Sur La Qualite Des Travaux-Materiaux
+                                        </h2>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>Sans Objet</th>
+                                    <th>Satisfaisant</th>
+                                    <th>Non Satisfaisant</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Isolation en toiture terrasse
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled >
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Isolation comble perdus
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled >
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Isolation rampants de toiture
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled >
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Isolation plancher bas
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled >
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Isolation thermiques exterieur
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled >
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Isolation thermique intérieur
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled >
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, consectetur dignissimos repellat ipsa autem quod, minus libero praesentium labore tenetur laborum id ducimus totam qui optio temporibus dolores distinctio alias.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%;" class="table-border left">
+                            <thead class="bg-secondary white">
+                                <tr>
+                                    <th colspan="4">
+                                        <h2>
+                                            Appreciation Sur La Qualite Des Travaux-Equipements
+                                        </h2>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>Sans Objet</th>
+                                    <th>Satisfaisant</th>
+                                    <th>Non Satisfaisant</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Pompe a chaleur type air/eau
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled >
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Pompe a chaleur type air/air
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled >
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Chauffe eau Thermodynamique a accumulation
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled >
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Chauffe eau solaire individuelle
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled >
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Ventillation mécanique simple flux hydgroréglable
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled >
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Ventillation mécanique double flux
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled >
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled checked>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="custom-checkbox" disabled>
+                                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- End Page 9 -->
+    <!-- Start Page 10 -->
+    <section id="page10">
+        <table style="width: 100%;">
+            <thead>
+                <th style="width: 50%">
+                    <img src="./mainLogo.png" alt="logo" style="width: 120px" />
+                </th>
+                <th style="width: 50%">
+                    <h1 style="text-transform: uppercase" class="secondary">
+                        <span class="primary">Rapport </span> D'INSPECTION
+                    </h1>
+                </th>
+            </thead>
+            <tbody>
+                <tr class="bg-secondary white">
+                    <td colspan="2">
+                        <h2>Preuve(s) de la réalisation des travaux</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%" class="left table-border">
+                            <thead class="bg-primary">
+                                <th>
+                                    <h3>POMPE AIR/EAU</h3>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3" rowspan="2"> Sans Objet</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%" class="left table-border">
+                            <thead class="bg-primary">
+                                <th colspan="3">
+                                    <h3>POMPE AIR/AIR</h3>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%" class="left table-border">
+                            <thead class="bg-primary">
+                                <th colspan="3">
+                                    <h3>CHAUFFE-EAU THERMO</h3>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%" class="left table-border">
+                            <thead class="bg-primary">
+                                <th colspan="3">
+                                    <h3>CHAUFFE-EAU SOL</h3>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%" class="left table-border">
+                            <thead class="bg-primary">
+                                <th colspan="3">
+                                    <h3>VENTILATION MECA SIMPLE</h3>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%" class="left table-border">
+                            <thead class="bg-primary">
+                                <th colspan="3">
+                                    <h3>VENTILATION MECA DOUBLE</h3>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%" class="left table-border">
+                            <thead class="bg-primary">
+                                <th colspan="3">
+                                    <h3>ISOLATION TH EXT</h3>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%" class="left table-border">
+                            <thead class="bg-primary">
+                                <th colspan="3">
+                                    <h3>ISOLATION TH INT</h3>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%" class="left table-border">
+                            <thead class="bg-primary">
+                                <th colspan="3">
+                                    <h3>RAMPANTS DE TOITURE</h3>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table style="width: 100%" class="left table-border">
+                            <thead class="bg-primary">
+                                <th colspan="3">
+                                    <h3>COMBLE PERDUS</h3>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                    <td><img src="./img1.jpg" style="max-width: 240px;"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+    </section>
+    <!-- End Page 10 -->
+</body>
+
+</html>
+

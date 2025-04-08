@@ -1,0 +1,35 @@
+[
+    {
+        "id": "1",
+        "creation_date": "2023-11-28",
+        "client_name": "John Doe",
+        "adresse": "123 Main St",
+        "dpt": "XYZ",
+        "client": "John Doe",
+        "phone": "+1234567890",
+        "Fiche": "File001.pdf",
+        "fiche": ""
+    },
+    {
+        "id": "2",
+        "creation_date": "2023-11-25",
+        "client_name": "Jane Smith",
+        "adresse": "456 Elm St",
+        "dpt": "ABC",
+        "client": "Jane Smith",
+        "phone": "+1987654321",
+        "fiche": "File002.pdf",
+        "Action": ""
+    },
+    {
+        "id": "3",
+        "creation_date": "2023-11-30",
+        "client_name": "Alex Johnson",
+        "adresse": "789 Oak St",
+        "dpt": "LMN",
+        "client": "Alex Johnson",
+        "phone": "+777888999",
+        "fiche": "File003.pdf",
+        "Action": ""
+    }
+]
