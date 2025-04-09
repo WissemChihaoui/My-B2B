@@ -7,10 +7,8 @@
 $(function () {
   var dt_dim_dispo_datatable = $(".datatables-dim-dispo"),
     facture = {
-      0: { value: 0, label: "FACTURE NON PAYE" },
-      1: { value: 1, label: "FACTURE OK" },
-      2: { value: 2, label: "FACTURE 2" },
-      3: { value: 3, label: "FACTURE 3 OK" },
+      0: { value: 0, label: "A FACTURER" },
+      1: { value: 1, label: "FACTURE" },
     };
 
   if (dt_dim_dispo_datatable.length) {

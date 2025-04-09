@@ -56,7 +56,8 @@ $(function () {
               Admin: 'Admin',
               Partenaire: 'Partenaire',
               Regie: 'Régie',
-              Ingenieur: 'Ingénieur'
+              Ingenieur: 'Ingénieur',
+              Delegataire: 'Délégataire'
             };
             var $output = '<select multiple class="selectpicker w-100" data-style="btn-default">';
             for (var role in roleOptions) {

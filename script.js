@@ -85,6 +85,26 @@ document.addEventListener("DOMContentLoaded", function (e) {
       }
     }, 200);
 
+    setTimeout(() => {
+      const addRegie = document.querySelector(".create-new-deleg"),
+        offCanvasElement = document.querySelector("#add-new-deleg");
+
+      // To open offCanvas, to modify record
+      if (addRegie) {
+        addRegie.addEventListener("click", function () {
+          offCanvasEl = new bootstrap.Offcanvas(offCanvasElement);
+          // Empty fields on offCanvas open
+          (offCanvasElement.querySelector(".dt-full-name").value = ""),
+            (offCanvasElement.querySelector(".dt-post").value = ""),
+            (offCanvasElement.querySelector(".dt-email").value = ""),
+            (offCanvasElement.querySelector(".dt-date").value = ""),
+            (offCanvasElement.querySelector(".dt-salary").value = "");
+          // Open offCanvas with form
+          offCanvasEl.show();
+        });
+      }
+    }, 200);
+
     // Form validation for Add new record
     fv = FormValidation.formValidation(formAddNewRecord, {
       fields: {
